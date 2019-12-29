@@ -1,5 +1,4 @@
-Orange Margarita
-~~~~~~~~~~~~~~~~
+=== Orange Margarita
 
 Yield: 1 drink
 
@@ -23,4 +22,3 @@ Steps:
 . Add liquid ingredients to cocktail shaker, hitting Tare between each addition
 . Place lid on cocktail shaker, then hold firmly, and shake vigorously for about 15 seconds
 . Pour cocktail into martini glass
-~                                                                   

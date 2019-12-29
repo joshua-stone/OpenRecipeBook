@@ -1,5 +1,4 @@
-Sidecar
-~~~~~~~
+=== Sidecar
 
 Yield: 1 drink
 
