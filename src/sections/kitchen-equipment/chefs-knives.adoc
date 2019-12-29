@@ -1,0 +1,9 @@
+[[chefs-knives]]
+=== Chef's Knives
+
+|===
+| Product | Reviews | Where to buy
+| Victorinox Fibrox Pro Chef's Knife, 8-Inch
+| https://www.youtube.com/watch?v=e50gujs4l-I[America's Test Kitchen]
+| https://www.amazon.com/Victorinox-Fibrox-Chefs-Knife-8-Inch/dp/B008M5U1C2[Amazon]
+|===

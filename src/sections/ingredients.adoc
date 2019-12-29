@@ -1,0 +1,3 @@
+== Ingredients
+
+include::ingredients/corn-flour.adoc[]

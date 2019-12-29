@@ -1,0 +1,24 @@
+French Connection
+~~~~~~~~~~~~~~~~~
+
+Yield: 1 drink
+
+Equipment:
+
+* <<kitchen-scales, Kitchen Scale>>
+* <<cocktail-shakers, Cocktail Shaker>>
+* <<cocktail-glasses, Martini Glass>>
+
+Ingredients:
+
+* https://www.disaronno.com/en[49 grams of Disaronno Amaretto]
+* https://www.remymartin.com/us/collection/vsop/[56 grams of Rémy Martin VSOP Cognac]
+
+Steps:
+
+. Place cocktail shaker on kitchen scale
+. Turn on kitchen scale and wait for it to set to zero with measurement set to grams
+. Add crushed ice to cocktail shaker, then hit Tare
+. Add liquid ingredients to cocktail shaker, hitting Tare between each addition
+. Place lid on cocktail shaker, hold firmly, then shake vigorously for about 15 seconds
+. Pour cocktail into martini glass

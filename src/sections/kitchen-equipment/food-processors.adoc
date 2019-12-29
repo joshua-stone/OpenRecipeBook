@@ -1,0 +1,10 @@
+[[food-processors]]
+=== Food Processors
+
+|===
+| Product | Reviews | Where to buy
+| Cuisinart DFP-14BCNY 14-Cup Food Processor
+| https://www.youtube.com/watch?v=QZokEtjvDao[America's Test Kitchen] +
+  https://thewirecutter.com/reviews/the-best-food-processor/[The Wirecutter]
+| https://www.amazon.com/Cuisinart-DFP-14BCNY-Processor-Brushed-Stainless/dp/B01AXM4WV2[Amazon]
+|===

@@ -1,0 +1,30 @@
+Sidecar
+~~~~~~~
+
+Yield: 1 drink
+
+Equipment:
+
+* <<kitchen-scales, Kitchen Scale>>
+* <<cocktail-shakers, Cocktail Shaker>>
+* <<cocktail-glasses, Martini Glass>>
+
+Ingredients:
+
+* https://www.remymartin.com/us/collection/vsop/[56 grams of Rémy Martin VSOP Cognac]
+* https://www.cointreau.com/us/en/[52 grams of Cointreau]
+* 40 grams of fresh lemon juice (pulp optional)
+* 20 grams of simple syrup made from https://www.amazon.com/Domino-Sugar-Granulated-4LB-Canister/dp/B00HJCXX24[granulated cane sugar] and https://www.amazon.com/Brita-Pitchers-36205-Everyday-Pitcher/dp/B01FXN3E74[filtered water]
+* https://www.amazon.com/Brita-Pitchers-36205-Everyday-Pitcher/dp/B01FXN3E74[200 grams of crushed ice made from filtered water]
+* https://www.amazon.com/Domino-Sugar-Granulated-4LB-Canister/dp/B00HJCXX24[Granulated cane sugar]
+
+Steps:
+
+. Invert martini glass and dip rim of glass in lemon juice
+. Invert martini glass and dip rim of glass in granulated cane sugar
+. Place cocktail shaker on kitchen scale
+. Turn on kitchen scale and wait for it to set to zero with measurement set to grams
+. Add crushed ice, then hit Tare
+. Add liquid ingredients in no particular order, hitting Tare between each addition added
+. Place lid on cocktail shaker, then shake vigorously for about 15 seconds
+. Pour cocktail into martini glass

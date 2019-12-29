@@ -1,0 +1,9 @@
+== Coffee
+
+<<<
+
+include::coffee/aeropress-coffee.adoc[]
+
+<<<
+
+include::coffee/french-press-coffee.adoc[]

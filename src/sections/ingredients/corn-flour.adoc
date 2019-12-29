@@ -1,0 +1,8 @@
+[#corn-flour]
+=== Corn Flour
+
+|===
+| Product | Where to buy
+| Maseca Instant Yellow Corn Masa Flour
+| https://www.amazon.com/Maseca-Instant-Yellow-Instantanea-Amarillo/dp/B004TD5FJK[Amazon]
+|===

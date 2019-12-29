@@ -1,0 +1,16 @@
+
+== Cocktails
+
+<<<
+
+include::cocktails/sidecar.adoc[]
+
+<<<
+
+include::cocktails/french-connection.adoc[]
+
+<<<
+
+include::cocktails/orange-margarita.adoc[]
+
+<<<

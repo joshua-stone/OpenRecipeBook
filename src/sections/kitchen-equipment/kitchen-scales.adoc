@@ -1,0 +1,12 @@
+[[kitchen-scales]]
+=== Kitchen Scales
+
+|===
+| Product | Reviews | Where to buy
+| Ozeri ZK14-S Pronto
+| https://thewirecutter.com/reviews/best-kitchen-scale/[The Wirecutter]
+| https://www.amazon.com/Ozeri-ZK14-S-Digital-Multifunction-Kitchen/dp/B004164SRA[Amazon]
+| OXO Good Grips Food Scale with Pull-Out Display
+| https://www.youtube.com/watch?v=hSm1hoyjoyY[America's Test Kitchen]
+| https://www.amazon.com/OXO-Stainless-Pull-Out-Display-11-Pound/dp/B000WJMTNA[Amazon]
+|===
