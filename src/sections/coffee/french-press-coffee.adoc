@@ -1,5 +1,4 @@
-French Press Coffee
-~~~~~~~~~~~~~~~~~~~
+=== French Press Coffee
 
 Yield: 1 drink
 

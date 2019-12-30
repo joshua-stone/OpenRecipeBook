@@ -1,5 +1,4 @@
-AeroPress Coffee
-~~~~~~~~~~~~~~~~
+=== AeroPress Coffee
 
 Yield: 1 drink
 

@@ -1,4 +1,4 @@
-[#corn-flour]
+[[corn-flour]]
 === Corn Flour
 
 |===
