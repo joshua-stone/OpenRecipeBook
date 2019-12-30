@@ -1,20 +1,18 @@
 DESTINATION=builds
-FLAGS=--safe-mode=safe --attribute=allow-uri-read --destination-dir=$(DESTINATION) 
+FLAGS=--safe-mode=safe --attribute=allow-uri-read
 INPUT=src/index.adoc
+OUT=$(DESTINATION)/recipe-book
 
 all: docbook html pdf
 
 docbook:
-	mkdir -p $(DESTINATION)
-	asciidoctor --backend=docbook $(FLAGS) $(INPUT)
+	asciidoctor --backend=docbook $(FLAGS) $(INPUT) --out-file=$(OUT).xml
 
 pdf:
-	mkdir -p $(DESTINATION)
-	asciidoctor-pdf ${FLAGS} $(INPUT)
+	asciidoctor-pdf ${FLAGS} $(INPUT) --out-file=$(OUT).pdf
 
 html:
-	mkdir -p $(DESTINATION)
-	asciidoctor --backend=html5 $(FLAGS) $(INPUT)
+	asciidoctor --backend=html5 $(FLAGS) $(INPUT) --out-file=$(OUT).html
 
 clean:
 	rm -rf $(DESTINATION)
