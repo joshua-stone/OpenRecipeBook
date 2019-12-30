@@ -2,12 +2,19 @@
 
 Yield: 4 tortillas
 
+Prep Time: 1 minute
+
+Cook Time: 20 minutes
+
 Equipment:
 
 * <<tortilla-presses, Tortilla Press>>
 * <<kitchens-scales, Kitchen Scale>>
 * <<mixing-bowls, Large Mixing bowl>>
 * <<freezer-bags, Freezer bag>>
+* <<cast-iron-skillets, Cast Iron Skillet>>
+* <<fish-spatula, Fish Spatula>>
+* <<plastic-wrap, Plastic wrap>>
 
 Ingredients:
 
@@ -15,3 +22,21 @@ Ingredients:
 * 110 grams of filtered cold water
 * 2 grams of fine sea salt
 
+Steps:
+
+. Place large mixing bowl onto kitchen scale, then turn kitchen scale with 
+. Pour corn flour and salt into mixing bowl
+. Pour water into mixing bowl, covering flour evenly
+. Hold edge of bowl with one hand, then mix together water and corn flour with other hand +
+  Note: If dough is too sticky or too dry, add a little more water or flour until it reaches
+. Form dough into a ball and place plastic wrap on top to keep it from drying out
+. Wait about 15 minutes
+. Uncover dough, then divide up dough into four parts, each about 52 grams
+. Roll each part into a ball
+. Pull freezer bag apart, then place in tortilla press
+. Place flour ball around the center of tortilla press, then close lid and press down for a brief moment
+. Preheat cast iron skillet until reaching the point of smoking
+. Carefully lift tortilla out of tortilla press with spatula and place in center of cast iron skillet
+. Wait about a minute for tortilla to heat and bubble before flipping
+. Once fully cooked on both sides, remove tortilla from skillet and store someplace to keep warm
+. Repeat steps 10 - 14 for the rest of the batch
