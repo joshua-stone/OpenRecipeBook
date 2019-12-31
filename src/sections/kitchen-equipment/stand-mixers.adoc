@@ -1,0 +1,9 @@
+[[stand-mixers]]
+=== Stand Mixers
+
+|===
+| Product | Reviews | Where to buy
+| KitchenAid Artisan Series 5-Quart Stand Mixer
+| https://thewirecutter.com/reviews/best-stand-mixer/[The Wirecutter]
+| https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-Pouring/dp/B00005UP2P[Amazon]
+|===   

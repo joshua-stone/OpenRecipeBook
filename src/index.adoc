@@ -1,6 +1,7 @@
 = Home recipes
 Joshua Stone <joshua.gage.stone@gmail.com>
 :doctype: book
+
 :toc:
 
 include::sections/kitchen-equipment.adoc[]
