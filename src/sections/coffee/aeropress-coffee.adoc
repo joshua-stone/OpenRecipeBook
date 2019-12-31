@@ -5,14 +5,14 @@ Yield: 1 drink
 
 Equipment:
 
-* <<coffeemakers,Burr Grinder>>
-* <<coffeemakers,AeroPress>>
-* <<coffeemakers,Reuseable filter cap>> (highly recommended)
-* <<kitchenscales,Kitchen scale>>
-* <<kettles,Kettle>>
-* <<waterpitchers,Water pitcher>>
-* <<thermometers,Thermometer>>
-* <<coffeecups,Coffee Cup>>
+* <<coffee-grinders, Burr Grinder>>
+* <<coffee-makers, AeroPress>>
+* <<coffee-makers, Reuseable filter cap>> (highly recommended)
+* <<kitchen-scales, Kitchen scale>>
+* <<kettles, Kettle>>
+* <<water-pitchers, Water pitcher>>
+* <<thermometers, Thermometer>>
+* <<coffee-cups, Coffee Cup>>
 * Stir Paddle
 
 Ingredients:

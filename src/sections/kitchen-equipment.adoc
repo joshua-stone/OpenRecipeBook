@@ -1,5 +1,7 @@
 == Kitchen Equipment
 
+include::kitchen-equipment/citrus-juicers.adoc[]
+
 include::kitchen-equipment/mixing-bowls.adoc[]
 
 include::kitchen-equipment/freezer-bags.adoc[]
@@ -17,6 +19,8 @@ include::kitchen-equipment/blenders.adoc[]
 include::kitchen-equipment/food-processors.adoc[]
 
 include::kitchen-equipment/kitchen-scales.adoc[]
+
+include::kitchen-equipment/coffee-cups.adoc[]
 
 include::kitchen-equipment/coffee-grinders.adoc[]
 

@@ -1,0 +1,9 @@
+[[coffee-cups]]
+=== Coffee Cups
+
+|===
+| Product | Reviews | Where to buy
+| Bodum Bistro Coffee Mugs
+| 
+| https://www.amazon.com/Bodum-Bistro-Coffee-Double-Wall-Insulated/dp/B00E2RU5TS[Amazon]
+|===   
