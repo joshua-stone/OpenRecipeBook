@@ -1,0 +1,10 @@
+[[coffee-grinders]]
+=== Coffee Grinders
+
+|===
+| Product | Reviews | Where to buy
+| Baratza Encore Conical Burr Coffee Grinder
+| https://www.youtube.com/watch?v=O7LAzSKgeoQ[America's Test Kitchen] +
+  https://thewirecutter.com/reviews/the-best-coffee-grinder/[The Wirecutter]
+| https://www.amazon.com/Baratza-Encore-Conical-Coffee-Grinder/dp/B007F183LK[Amazon]
+|===   

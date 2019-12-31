@@ -18,7 +18,11 @@ include::kitchen-equipment/food-processors.adoc[]
 
 include::kitchen-equipment/kitchen-scales.adoc[]
 
+include::kitchen-equipment/coffee-grinders.adoc[]
+
 include::kitchen-equipment/coffee-makers.adoc[]
+
+include::kitchen-equipment/kettles.adoc[]
 
 include::kitchen-equipment/frying-pans.adoc[]
 

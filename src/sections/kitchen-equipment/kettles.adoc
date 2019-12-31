@@ -1,0 +1,18 @@
+[[kettles]]
+=== Kettles
+
+|===
+| Product | Reviews | Where to buy
+| Cuisinart CPK-17 PerfecTemp Kettle
+| https://thewirecutter.com/reviews/the-best-home-kettle/[The Wirecutter]
+| https://www.amazon.com/Cuisinart-CPK-17-PerfecTemp-1-7-Liter-Stainless/dp/B003KYSLNQ[Amazon]
+| OXO BREW Adjustable Temperature Pour-Over Kettle
+| https://thewirecutter.com/reviews/the-best-home-kettle/[The Wirecutter]
+| https://www.amazon.com/OXO-Adjustable-Temperature-Electric-Pour-Over/dp/B074KHPS7F[Amazon]
+| Hamilton Beach Electric Tea Kettle
+| https://thewirecutter.com/reviews/the-best-home-kettle/[The Wirecutter]
+| https://www.amazon.com/Hamilton-Beach-Auto-Shutoff-Protection-40880/dp/B00UFQ2LJ2[Amazon]
+| OXO BREW Cordless Glass Electric Kettle 
+| https://www.youtube.com/watch?v=WSjFFXViofw[America's Test Kitchen]
+| https://www.amazon.com/OXO-Cordless-Electric-Kettle-Stainless/dp/B00YEYKRX8[Amazon]
+|===   
