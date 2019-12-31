@@ -4,6 +4,8 @@ include::kitchen-equipment/mixing-bowls.adoc[]
 
 include::kitchen-equipment/freezer-bags.adoc[]
 
+include::kitchen-equipment/plastic-wraps.adoc[]
+
 include::kitchen-equipment/cocktail-shakers.adoc[]
 
 include::kitchen-equipment/silicone-spatulas.adoc[]
