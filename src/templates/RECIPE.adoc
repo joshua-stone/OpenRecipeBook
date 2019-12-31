@@ -1,3 +1,4 @@
+[[LINK]]
 === RECIPE
 
 Yield: YIELD
