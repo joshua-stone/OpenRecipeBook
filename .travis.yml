@@ -1,10 +1,9 @@
 language: python
-python: 3.8
+python: 3.6
 before_install:
-  - sudo apt install --assume-yes make pandoc python3-yaml python3-pip ruby
-  - sudo gem install asciidoctor-pdf --pre
+  - sudo apt install --assume-yes make pandoc python3-pip
 install:
-  - pip3 install cerberus
+  - pip3 install cerberus pyyaml
 addons:
   apt:
     update: true
