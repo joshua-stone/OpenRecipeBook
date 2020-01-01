@@ -7,9 +7,10 @@ One of the best things about open source is its collaborative nature and the sen
 === Ubuntu
 
 ....
-$ sudo apt install --assume-yes make pandoc python3-yaml python3-pip ruby
-$ sudo gem install asciidoctor-pdf --pre
-$ pip3 install --user cerberus
+$ sudo apt install --assume-yes make pandoc python3-pip ruby
+$ sudo gem install bundler
+$ pip3 install --user -r requirements.txt
+$ bundle install
 $ make
 $ xdg-open builds/recipe-book.pdf
 ....
@@ -18,7 +19,10 @@ $ xdg-open builds/recipe-book.pdf
 
 ....
 $ toolbox create --container openrecipebook --release f31
-$ toolbox run --container openrecipebook sudo dnf --assumeyes install make pandoc python3-cerberus python3-yaml rubygem-asciidoctor-pdf
+$ toolbox run --container openrecipebook sudo dnf --assumeyes install make pandoc python3-pip ruby
+$ toolbox run --container openrecipebook sudo gem install bundler
+$ toolbox run --container openrecipebook pip3 install --user -r requirements.txt
+$ toolbox run --container openrecipebook bundle install
 $ toolbox run --container openrecipebook make
 $ xdg-open builds/recipe-book.pdf
 ....
@@ -27,9 +31,9 @@ $ xdg-open builds/recipe-book.pdf
 
 ....
 $ sudo zypper --non-interactive install make pandoc python3-pip ruby
-$ sudo gem install asciidoctor
-$ sudo gem install asciidoctor-pdf --pre
-$ pip3 install --user cerberus pyyaml
+$ sudo gem install bundler
+$ pip3 install --user -r requirements.txt
+$ bundle install
 $ make
 $ xdg-open builds/recipes-book.pdf
 ....
