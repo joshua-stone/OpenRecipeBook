@@ -1,12 +1,8 @@
 language: python
 python: 3.6
-before_install:
-  - sudo apt install --assume-yes make pandoc python3-pip
 install:
-  - pip3 install cerberus pyyaml
-addons:
-  apt:
-    update: true
+  - pip install -r requirements.txt
+  - bundle install
 script:
   - src/bin/checkschema.py equipment src/config/equipment/*.yml
   - src/bin/checkschema.py ingredient src/config/ingredients/*.yml
