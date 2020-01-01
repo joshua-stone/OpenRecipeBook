@@ -10,4 +10,4 @@ addons:
 script:
   - src/bin/checkschema.py equipment src/config/equipment/*.yml
   - src/bin/checkschema.py ingredient src/config/ingredients/*.yml
-  - src/bin/checkschema.py recipe src/config/recipes/*.yml
+  - src/bin/checkschema.py recipe src/config/recipes/**/*.yml
