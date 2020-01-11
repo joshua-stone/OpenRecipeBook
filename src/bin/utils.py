@@ -5,12 +5,46 @@ from string import Template
 from os.path import splitext, basename, isfile, isdir, join
 from os import listdir, mkdir
 from shutil import copytree
+from enum import Enum
+from re import findall, search
+
+class Temperature(Enum):
+    Imperial = 1
+    SI = 2
+    
 def copy_directory(source, destination):
     try:
         copytree(source, destination)
     except Exception as e:
         print(e)
         exit(1)
+
+def cels_to_fahr(temperature):
+    return f'{int(9.0/5.0 * temperature + 32)}° F'
+
+def fahr_to_cels(temperature):
+    return f'{int(5.0/9.0 * (temperature - 32))}° C'
+
+def generate_temperature(text, temperature_unit):
+    for match in findall('\[temp:-?\d*[FfCc]\]', text):
+        *value, unit = search('-?\d*[FfCc]', match)[0]
+        temperature = int(''.join(value))
+        
+        if unit in ('C', 'c'):
+            if temperature_unit == Temperature.SI:
+                output = '{temperature}° C'
+            else:
+                output = cels_to_fahr(temperature)
+
+        elif unit in ('F', 'f'):
+            if temperature_unit == Temperature.Imperial:
+                output = '{temperature}° F'
+            else:
+                output = fahr_to_cels(temperature)
+        else:
+            raise ValueError('Invalid temperature unit!')
+        text = text.replace(match, output)
+    return text
 
 def generate_includes(paths):
     includes = ['include::' + splitext(path)[0] + '.adoc[]' for path in paths]
@@ -379,7 +413,7 @@ $table
     )
     return output
 
-def convert_recipe(config):
+def convert_recipe(config, temperature_unit=Temperature.Imperial):
     template = Template('''[[$entry_id]]
 === $entry_name
 $summary
@@ -420,18 +454,6 @@ $steps
     equipment = []
     for item in config.get('equipment'):
         link = generate_link(item)
-#        name = item['name']
-#        if 'link' in item:
-#            link = item['link']
-#            if link.startswith('ref:'):
-#                line = f'* <<{link[4:]}, {name}>>'
-#            elif link.startswith('http://') or link.startswith('https://'):
-#                line = f'* {link}[{name}]'
-#            else:
-#                line = f'* {name}'
-#        else:
-#            line = f'* {name}'
-
         equipment.append('* ' + link)
 
 
@@ -462,7 +484,7 @@ $steps
         step = '. ' + direction['step']
         if 'note' in direction.keys():
             step += '+\n  Note: ' + direction['note']
-        steps.append(step)
+        steps.append(generate_temperature(step, temperature_unit))
 
     output = template.safe_substitute(
         entry_id=entry_id,
