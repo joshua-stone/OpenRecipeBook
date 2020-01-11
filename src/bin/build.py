@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-from utils import build_documents, copy_directory
+from utils import build_documents, copy_directory, Temperature, set_temperature_unit
 from os.path import isdir, join
 from os import mkdir
 from sys import exit, argv
@@ -15,6 +15,8 @@ if __name__ == '__main__':
     except Exception as e:
         print(e)
         exit(1)
+
+    set_temperature_unit(Temperature.SI)
 
     equipment_source_directory = join(build_source, 'config', 'equipment')
     ingredient_source_directory = join(build_source, 'config', 'ingredients')
