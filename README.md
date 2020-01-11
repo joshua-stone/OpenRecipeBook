@@ -7,7 +7,7 @@
 ```
     $ toolbox create --container openrecipebook
     $ toolbox enter --container openrecipebook
-    $ sudo dnf --assumeyes install asciidoctor-pdf make pandoc
+    $ sudo dnf --assumeyes install asciidoctor-pdf make pandoc python3-cerberus python3-yaml
     $ make
     $ exit
     $ xdg-open builds/recipe-book.pdf
