@@ -1,0 +1,10 @@
+id: 'silicone-spatulas'
+name: 'Silicone Spatulas'
+products:
+        - name: 'Di Oro Seamless Silicone Spatula'
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=k_dddKEiPHE'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Oro-Living-Large-Silicone-Spatula/dp/B00LBFWJB6'

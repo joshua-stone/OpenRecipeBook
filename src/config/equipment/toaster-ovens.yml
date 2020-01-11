@@ -1,0 +1,12 @@
+id: 'toaster-ovens'
+name: 'Toaster Ovens'
+products:
+        - name: 'Breville BOV800XL Smart Oven'
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=oeAwD144aV4'
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/the-best-toaster-oven/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Breville-BOV800XL-1800-Watt-Convection-Toaster/dp/B001L5TVGW'

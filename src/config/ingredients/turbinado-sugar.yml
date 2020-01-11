@@ -1,0 +1,7 @@
+id: 'turbinado-sugar'
+name: 'Turbinado Sugar'
+products:
+        - name: 'Sugar In The Raw'
+          stores:
+                - name: 'Amazon'
+                  link: 'https://www.amazon.com/Sugar-Raw-Unrefined-Ounce-Box/dp/B002KOTMX0'

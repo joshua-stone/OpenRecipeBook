@@ -1,3 +1,4 @@
 *.swp
 .idea/
 builds/
+src/bin/__pycache__/

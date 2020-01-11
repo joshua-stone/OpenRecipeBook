@@ -1,0 +1,7 @@
+id: 'plastic-wraps'
+name: 'Plastic Wraps'
+products:
+        - name: "Glad Press'n Seal Plastic Food Wrap"
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Glad-Pressn-Seal-Plastic-Food/dp/B00KKC6C2I'

@@ -1,0 +1,17 @@
+id: 'citrus-juicers'
+name: 'Citrus Juicers'
+products:
+        - name: "Chef'n FreshForce Citrus Juicer"
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=AlOS3_nnrcY'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Chefn-FreshForce-Citrus-Juicer-Lime/dp/B002XOB0P0'
+        - name: "Proctor Silex Alex’s Lemonade Stand Citrus Juicer"
+          reviews:
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/best-citrus-juicer/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Proctor-Silex-66331-Lemonade-Citrus/dp/B008BBCZ3K'

@@ -1,0 +1,12 @@
+id: 'mixing-bowls'
+name: 'Mixing Bowls'
+products:
+        - name: 'Pyrex Smart Essentials 8-Piece Mixing Bowl Set'
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=6naOQ_5ZU_U'
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/best-mixing-bowls/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Pyrex-Smart-Essentials-8-Piece-Mixing/dp/B000FBUMLQ'

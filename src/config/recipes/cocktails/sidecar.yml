@@ -1,0 +1,44 @@
+id: 'sidecar'
+name: 'Sidecar'
+yield: 1
+prep-time: '2 minutes'
+cook-time: '2 minutes'
+equipment:
+        - name: 'Kitchen Scale'
+          link: 'ref:kitchen-scales'
+          name: 'Cocktail Shaker'
+          link: 'ref:cocktail-shakers'
+          name: 'Martini Glass'
+          link: 'ref:cocktail-glasses'
+ingredients:
+        - name: 'Rémy Martin VSOP Cognac'
+          unit: 'gram'
+          quantity: 56
+          link: 'ref:cognac'
+        - name: 'Cointreau'
+          unit: 'gram'
+          quantity: 52
+          link: 'ref:cointreau'
+        - name: 'Fresh lemon juice'
+          unit: 'gram'
+          quantity: 40
+        - name: 'Simple Syrup'
+          unit: 'gram'
+          quantity: 20
+          link: 'ref:simple-syrup'
+        - name: 'Crushed ice'
+          unit: 'gram'
+          quantity: 200
+        - name: 'Superfine sugar'
+          link: 'ref:superfine-sugar'
+          unit: 'gram'
+          quantity: 25
+directions:
+        - step: 'Invert martini glass and line rim with lemon juice'
+        - step: 'Invert martini glass and line rim with superfine sugar'
+        - step: 'Place cocktail shaker on kitchen scale'
+        - step: 'Turn on kitchen scale and wait for it to set to zero with measurement set to grams'
+        - step: 'Add crushed ice, then hit Tare'
+        - step: 'Add liquid ingredients in no particular order, hitting Tare between each addition added'
+        - step: 'Place lid on cocktail shaker, then shake vigorously for about 10 seconds'
+        - step: 'Pour cocktail into martini glass'

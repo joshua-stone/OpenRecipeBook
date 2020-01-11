@@ -1,0 +1,10 @@
+id: 'chefs-knives'
+name: "Chef's Knives"
+products:
+        - name: "Victorinox Fibrox Pro Chef's Knife, 8-Inch"
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=e50gujs4l-I'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Victorinox-Fibrox-Chefs-Knife-8-Inch/dp/B008M5U1C2'
