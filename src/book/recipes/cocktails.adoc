@@ -1,0 +1,6 @@
+[[cocktails]]
+== Cocktails
+
+<<<
+
+include::cocktails-include.adoc[]

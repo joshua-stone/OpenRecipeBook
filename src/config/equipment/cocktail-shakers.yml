@@ -1,0 +1,9 @@
+id: 'cocktail-shakers'
+name: 'Cocktail Shakers'
+products:
+        - name: 'Cresimo 24 Ounce Cocktail Shaker'
+          stores: 
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Ounce-Cocktail-Shaker-Accessories-Built/dp/B011QONIBG'
+                  - name: 'Cresimo'
+                    link: 'https://www.cresimo.com/collections/frontpage/products/24-oz-cocktail-martini-shaker-jigger-bar-spoon'

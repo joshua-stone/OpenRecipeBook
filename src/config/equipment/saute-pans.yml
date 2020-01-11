@@ -1,0 +1,11 @@
+id: 'saute-pans'
+name: 'Saute Pans'
+products:
+        - name:  'All-Clad 3-Quart Saute Pan'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/All-Clad-Stainless-Tri-Ply-Dishwasher-3-Quart/dp/B004T6J5XY'
+        - name: 'All-Clad 6-Quart Saute Pan'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/All-Clad-Stainless-Dishwasher-Cookware-6-Quart/dp/B004T6J6BA'

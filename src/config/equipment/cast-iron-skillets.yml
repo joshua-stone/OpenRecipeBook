@@ -1,0 +1,10 @@
+id: 'cast-iron-skillets'
+name: 'Cast Iron Skillets'
+products:
+        - name: 'Lodge Cast Iron 12-inch Skillet'
+          reviews:
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/best-cast-iron-skillet/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Lodge-Skillet-Pre-Seasoned-Ready-Stove/dp/B00006JSUB'

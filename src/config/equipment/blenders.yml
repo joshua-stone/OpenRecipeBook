@@ -1,0 +1,13 @@
+id: 'blenders'
+name: 'Blenders'
+products: 
+        - name: 'Vitamix 5200 Blender'
+          reviews:
+                - name: 'The Wirecutter'
+                  link: 'https://thewirecutter.com/reviews/best-blender/'
+                - name: "America's Test Kitchen"
+                  link: 'https://www.youtube.com/watch?v=4dlSYg43TUY'
+          stores:
+                - name: 'Amazon'
+                  link: 'https://www.amazon.com/Vitamix-Blender-Professional-Grade-Container-Black/dp/B008H4SLV6'
+

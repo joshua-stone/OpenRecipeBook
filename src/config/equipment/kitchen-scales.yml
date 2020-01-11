@@ -1,0 +1,17 @@
+id: 'kitchen-scales'
+name: 'Kitchen Scales'
+products:
+        - name: 'Ozeri ZK14-S Pronto'
+          reviews:
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/best-kitchen-scale/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Ozeri-ZK14-S-Digital-Multifunction-Kitchen/dp/B004164SRA'
+        - name: 'OXO Good Grips Food Scale with Pull-Out Display'
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=hSm1hoyjoyY'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/OXO-Stainless-Pull-Out-Display-11-Pound/dp/B000WJMTNA'

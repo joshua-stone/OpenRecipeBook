@@ -1,21 +1,24 @@
 DESTINATION=builds
 FLAGS=--safe-mode=safe --attribute=allow-uri-read
-INPUT=src/index.adoc
-OUT=$(DESTINATION)/recipe-book
+INPUT=builds/book/index.adoc
+OUTPUT=$(DESTINATION)/recipe-book
+export PATH := src/bin:$(PATH)
 
-all: docbook html pdf epub
+all: asciidoc docbook html pdf epub
 
-docbook:
-	asciidoctor --backend=docbook $(FLAGS) $(INPUT) --out-file=$(OUT).xml
+asciidoc:
+	build.py src $(DESTINATION)
+docbook: asciidoc
+	asciidoctor --backend=docbook $(FLAGS) $(INPUT) --out-file=$(OUTPUT).xml
 
-pdf:
-	asciidoctor-pdf ${FLAGS} $(INPUT) --out-file=$(OUT).pdf
+pdf:	asciidoc
+	asciidoctor-pdf ${FLAGS} $(INPUT) --out-file=$(OUTPUT).pdf
 
-html:
-	asciidoctor --backend=html5 $(FLAGS) $(INPUT) --out-file=$(OUT).html
+html:	asciidoc
+	asciidoctor --backend=html5 $(FLAGS) $(INPUT) --out-file=$(OUTPUT).html
 
 epub:	docbook
-	pandoc --from docbook --to epub $(OUT).xml -o $(OUT).epub
+	pandoc --from docbook --to epub $(OUTPUT).xml -o $(OUTPUT).epub
 
 clean:
 	rm -rf $(DESTINATION)

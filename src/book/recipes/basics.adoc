@@ -1,0 +1,6 @@
+[[basics]]
+== Basics
+
+<<<
+
+include::basics-include.adoc[]

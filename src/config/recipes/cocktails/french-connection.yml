@@ -1,0 +1,29 @@
+id: 'french-connection'
+name: 'French Connection'
+yield: 1
+prep-time: '2 minutes'
+cook-time: '2 minutes'
+equipment:
+        - name: 'Kitchen Scale'
+          link: 'ref:kitchen-scales'
+        - name: 'Cocktail Shaker'
+          link: 'ref:cocktail-shakers'
+        - name: 'Martini Glass'
+          link: 'ref:cocktail-glasses'
+ingredients:
+        - name: 'Disaronno Amaretto'
+          unit: 'gram'
+          quantity: 49
+          link: 'ref:amaretto'
+        - name: 'Rémy Martin VSOP Cognac'
+          unit: 'gram'
+          quantity: 56
+          link: 'ref:cognac'
+directions:
+        - step: 'Place cocktail shaker on kitchen scale'
+        - step: 'Turn on kitchen scale and wait for it to set to zero with measurement set to grams'
+        - step: 'Add crushed ice to cocktail shaker, then hit Tare'
+        - step: 'Add liquid ingredients to cocktail shaker, hitting Tare between each addition'
+        - step: 'Place lid on cocktail shaker, hold firmly, then shake vigorously for about 10 seconds'
+        - step: 'Pour cocktail into martini glass'
+

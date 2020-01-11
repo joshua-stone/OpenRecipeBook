@@ -1,0 +1,6 @@
+[[coffee]]
+== Coffee
+
+<<<
+
+include::coffee-include.adoc[]
