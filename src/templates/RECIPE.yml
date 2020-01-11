@@ -1,0 +1,16 @@
+id: 'unique_id'
+name: 'recipe name'
+yield: 1
+prep-time: '1 minute'
+cook-time: '1 minute'
+equipment:
+    - name: 'equipment name'
+      link: 'ref:link_id'
+ingredients:
+    - name: 'ingredient name'
+      unit: 'gram'
+      quantity: 1
+directions:
+    - step: 'step'
+      note: 'optional note'
+
