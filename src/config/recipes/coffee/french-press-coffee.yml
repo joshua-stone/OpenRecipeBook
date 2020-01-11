@@ -1,6 +1,5 @@
 id: 'french-press-coffee'
 name: 'French Press Coffee'
-summary: test
 yield: 1
 prep-time: '1 minutes'
 cook-time: '4 minutes'
@@ -30,7 +29,7 @@ directions:
     - step: 'Put coffee beans inside hopper of burr grinder'
     - step: 'Set grinder to the roughest level available, then grind beans'
     - step: 'Pour filtered water into kettle'
-    - step: 'Heat water, testing water temperature with thermometer until reaching 92 - 95C (198 - 204F)'
+    - step: 'Heat water, testing water temperature with thermometer until reaching [temp:92C] - [temp:95C]'
     - step: 'Turn on kitchen scale, setting weight to zero grams'
     - step: 'Pour coffee grounds into French Press, then hit Tare'
     - step: 'Pour water into French Press, the until grounds are fully submerged'

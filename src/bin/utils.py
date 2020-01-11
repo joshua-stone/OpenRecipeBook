@@ -5,13 +5,18 @@ from string import Template
 from os.path import splitext, basename, isfile, isdir, join
 from os import listdir, mkdir
 from shutil import copytree
-from enum import Enum
+from enum import Enum, auto
 from re import findall, search
 
 class Temperature(Enum):
-    Imperial = 1
-    SI = 2
-    
+    Imperial = auto()
+    SI = auto()
+
+__TEMPERATURE_UNIT__ = [Temperature.Imperial]
+
+def set_temperature_unit(unit):
+    __TEMPERATURE_UNIT__[0] = unit
+
 def copy_directory(source, destination):
     try:
         copytree(source, destination)
@@ -25,20 +30,20 @@ def cels_to_fahr(temperature):
 def fahr_to_cels(temperature):
     return f'{int(5.0/9.0 * (temperature - 32))}° C'
 
-def generate_temperature(text, temperature_unit):
+def generate_temperature(text):
     for match in findall('\[temp:-?\d*[FfCc]\]', text):
         *value, unit = search('-?\d*[FfCc]', match)[0]
         temperature = int(''.join(value))
         
         if unit in ('C', 'c'):
-            if temperature_unit == Temperature.SI:
-                output = '{temperature}° C'
+            if __TEMPERATURE_UNIT__[0] == Temperature.SI:
+                output = f'{temperature}° C'
             else:
                 output = cels_to_fahr(temperature)
 
         elif unit in ('F', 'f'):
-            if temperature_unit == Temperature.Imperial:
-                output = '{temperature}° F'
+            if __TEMPERATURE_UNIT__[0] == Temperature.Imperial:
+                output = f'{temperature}° F'
             else:
                 output = fahr_to_cels(temperature)
         else:
@@ -303,12 +308,12 @@ recipe_schema = {
         }
     },
     'directions': {
-            'type': 'list',
+        'type': 'list',
+        'required': True,
+        'schema': {
+            'type': 'dict',
             'required': True,
             'schema': {
-                'type': 'dict',
-                'required': True,
-                'schema': {
                 'step': {
                     'type': 'string',
                     'required': True,
@@ -318,11 +323,20 @@ recipe_schema = {
                     'type': 'string',
                     'required': False,
                     'minlength': 1,
-
                 }
             }
         }
+    },
+    'notes': {
+        'type': 'list',
+        'required': False,
+        'schema': {
+            'type': 'string',
+            'required': False,
+            'minlength': 1
+        }
     }
+
 }
 
 def convert_ingredient(config):
@@ -413,15 +427,15 @@ $table
     )
     return output
 
-def convert_recipe(config, temperature_unit=Temperature.Imperial):
+def convert_recipe(config):
     template = Template('''[[$entry_id]]
 === $entry_name
 $summary
 Yield: $entry_yield
 
-Prep Time: $prep_time
+Prep time: $prep_time
 
-Cook Time: $cook_time
+Cook time: $cook_time
 
 Equipment:
 
@@ -431,10 +445,10 @@ Ingredients:
 
 $ingredients
 
-Step:
+Steps:
 
 $steps
-
+$notes
 <<<
 ''')
 
@@ -447,7 +461,7 @@ $steps
     else:
         summary = ''
 
-    entry_yield = config.get('yield')
+    entry_yield = str(config.get('yield')) + ' serving' if config.get('yield') == 1 else ' servings'
     prep_time = config.get('prep-time')
     cook_time = config.get('cook-time')
 
@@ -466,16 +480,18 @@ $steps
         else:
             unit = ''
 
+        text = f'{quantity} {unit} of {name}'
+
         if 'link' in item:
             link = item['link']
             if link.startswith('ref:'):
-                line = f'* <<{link[4:]}, {quantity} {unit} of {name}>>'
+                line = f'* <<{link[4:]}, {text}>>'
             elif link.startswith('http://') or link.startswith('https://'):
-                line = f'* {link}[{quantity} {unit} of {name}]'
+                line = f'* {link}[{text}]'
             else:
-                line = f'* {quantity} {unit} of {name}'
+                line = f'* {text}'
         else:
-            line = f'* {quantity} {unit} of {name}'
+            line = f'* {text}'
 
         ingredients.append(line)
 
@@ -484,7 +500,17 @@ $steps
         step = '. ' + direction['step']
         if 'note' in direction.keys():
             step += '+\n  Note: ' + direction['note']
-        steps.append(generate_temperature(step, temperature_unit))
+        steps.append(generate_temperature(step))
+
+    notes = []
+    if 'notes' in config.keys():
+        for note in config.get('notes'):
+            notes.append('* ' + note)
+
+    if notes:
+        note_section = '\nNotes:\n\n' + '\n'.join(notes) + '\n\n'
+    else:
+        note_section = ''
 
     output = template.safe_substitute(
         entry_id=entry_id,
@@ -495,7 +521,8 @@ $steps
         cook_time=cook_time,
         equipment='\n'.join(equipment),
         ingredients='\n'.join(ingredients),
-        steps='\n'.join(steps)
+        steps='\n'.join(steps),
+        notes=note_section
     )
     return output
 

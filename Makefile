@@ -2,12 +2,13 @@ DESTINATION=builds
 FLAGS=--safe-mode=safe --attribute=allow-uri-read
 INPUT=builds/book/index.adoc
 OUTPUT=$(DESTINATION)/recipe-book
+TEMPERATURE_SYSTEM=imperial
 export PATH := src/bin:$(PATH)
 
 all: asciidoc docbook html pdf epub
 
 asciidoc:
-	build.py src $(DESTINATION)
+	build.py --temperature=$(TEMPERATURE_SYSTEM) src $(DESTINATION)
 docbook: asciidoc
 	asciidoctor --backend=docbook $(FLAGS) $(INPUT) --out-file=$(OUTPUT).xml
 
