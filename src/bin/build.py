@@ -4,19 +4,25 @@ from utils import build_documents, copy_directory, Temperature, set_temperature_
 from os.path import isdir, join
 from os import mkdir
 from sys import exit, argv
+from argparse import ArgumentParser
 
 if __name__ == '__main__':
+    parser = ArgumentParser(description='Create and/or edit config files')
+    parser.add_argument('source', type=str, help='Input source directory, e.g., \'src\'')
+    parser.add_argument('destination', type=str, help='Build destination, e.g., \'builds\'')
+    parser.add_argument('-t', '--temperature', help='Set temperature', choices=['imperial', 'si'], default='imperial')
+
+    args = parser.parse_args()
+    
     try:
-        if len(argv) < 3:
-             raise ValueError('Not enough arguments!')
-
-        build_source, build_destination = argv[1], argv[2]
-
+        build_source, build_destination = args.source, args.destination
+        if args.temperature == 'imperial':
+            set_temperature_unit(Temperature.Imperial)
+        else:
+            set_temperature_unit(Temperature.SI)
     except Exception as e:
         print(e)
         exit(1)
-
-    set_temperature_unit(Temperature.SI)
 
     equipment_source_directory = join(build_source, 'config', 'equipment')
     ingredient_source_directory = join(build_source, 'config', 'ingredients')

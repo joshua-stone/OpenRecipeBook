@@ -30,7 +30,7 @@ def cels_to_fahr(temperature):
 def fahr_to_cels(temperature):
     return f'{int(5.0/9.0 * (temperature - 32))}° C'
 
-def generate_temperature(text, temperature_unit):
+def generate_temperature(text):
     for match in findall('\[temp:-?\d*[FfCc]\]', text):
         *value, unit = search('-?\d*[FfCc]', match)[0]
         temperature = int(''.join(value))
@@ -427,7 +427,7 @@ $table
     )
     return output
 
-def convert_recipe(config, temperature_unit=Temperature.Imperial):
+def convert_recipe(config):
     template = Template('''[[$entry_id]]
 === $entry_name
 $summary
@@ -448,9 +448,7 @@ $ingredients
 Steps:
 
 $steps
-
 $notes
-
 <<<
 ''')
 
@@ -482,16 +480,18 @@ $notes
         else:
             unit = ''
 
+        text = f'{quantity} {unit} of {name}'
+
         if 'link' in item:
             link = item['link']
             if link.startswith('ref:'):
-                line = f'* <<{link[4:]}, {quantity} {unit} of {name}>>'
+                line = f'* <<{link[4:]}, {text}>>'
             elif link.startswith('http://') or link.startswith('https://'):
-                line = f'* {link}[{quantity} {unit} of {name}]'
+                line = f'* {link}[{text}]'
             else:
-                line = f'* {quantity} {unit} of {name}'
+                line = f'* {text}'
         else:
-            line = f'* {quantity} {unit} of {name}'
+            line = f'* {text}'
 
         ingredients.append(line)
 
@@ -500,7 +500,7 @@ $notes
         step = '. ' + direction['step']
         if 'note' in direction.keys():
             step += '+\n  Note: ' + direction['note']
-        steps.append(generate_temperature(step, temperature_unit))
+        steps.append(generate_temperature(step))
 
     notes = []
     if 'notes' in config.keys():
@@ -508,13 +508,9 @@ $notes
             notes.append('* ' + note)
 
     if notes:
-        note_section = 'Notes:\n\n' + '\n'.join(notes) + '\n'
+        note_section = '\nNotes:\n\n' + '\n'.join(notes) + '\n\n'
     else:
         note_section = ''
-    #if 'notes' in config.keys():
-    #    notes = '\nNotes: ' + config.get('notes') + '\n'
-    #else:
-    #    notes = ''
 
     output = template.safe_substitute(
         entry_id=entry_id,
