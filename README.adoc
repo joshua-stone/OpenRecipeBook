@@ -27,3 +27,11 @@ Anyone is welcome to contribute a recipe that they've perfected over time and ha
 - Measurements should use mass whenever possible. Due to differences and inconsistencies in measuring systems, measuring by volume can lead to an otherwise good recipe having poor results.
 - Measurements using whole units, e.g., "1 tomato", are acceptable as they're often intuitive to read. Listing mass alongside for accuracy is recommended as well
 - Mentioning brands is helpful since there tends to be deviation in taste, texture, etc.
+
+== TODO
+
+- Port more of the project to YAML
+- Set up CI
+- Adding wiki pages
+- Support converting between mass Imperial and Metric
+- Look into supporting images
