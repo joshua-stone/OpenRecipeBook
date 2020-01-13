@@ -1,25 +1,23 @@
-# OpenRecipeBook
+= OpenRecipeBook
 
 One of the best things about open source is its collaborative nature and the sense of community that it creates. For a lot of projects however, finding new contributors can be difficult since many users don't have the inclination to code, and writing high quality documentation can be very difficult. This project hopes to occupy a niche where contributing documentation through open source can be fun and easy, because anybody can cook and recipes can be fun to share!
 
-## Building
+== Building
 
-### Fedora/Silverblue
+=== Fedora/Silverblue
 
-```
-    $ toolbox create --container openrecipebook
-    $ toolbox enter --container openrecipebook
-    $ sudo dnf --assumeyes install asciidoctor-pdf make pandoc python3-cerberus python3-yaml
-    $ make
-    $ exit
-    $ xdg-open builds/recipe-book.pdf
-```
+....
+$ toolbox create --container openrecipebook --release f31
+$ toolbox run --container openrecipebook sudo dnf --assumeyes install make pandoc python3-cerberus python3-yaml rubygem-asciidoctor-pdf
+$ toolbox run --container openrecipebook make
+$ xdg-open builds/recipe-book.pdf
+....
 
-## Community
+== Community
 
 Please check out the official https://discord.gg/sDzCaeH[OpenRecipeBook Discord server]! On there you can discuss ways to improve OpenRecipeBook, make suggestions for recipes, recommend cooking tips, etc.
 
-## Contributing a recipe
+== Contributing a recipe
 
 Anyone is welcome to contribute a recipe that they've perfected over time and have wanted to share with others! Please note that some guidelines should be followed for a consistent reading experience:
 
