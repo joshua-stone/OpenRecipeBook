@@ -21,7 +21,7 @@ Please check out the official https://discord.gg/sDzCaeH[OpenRecipeBook Discord 
 
 Anyone is welcome to contribute a recipe that they've perfected over time and have wanted to share with others! Please note that some guidelines should be followed for a consistent reading experience:
 
-- Additions should be derived from `src/templates/`. Recipes are stores as YAML, which can be checked by running `src/bin/checkschema.py`.
+- Additions should be derived from `src/templates/`. Recipes are stored as YAML, which can be checked by running `src/bin/checkschema.py`.
 - Equipment should be explicitely listed, and any equipment should link to the equipment section of the recipe book. This lets aspiring home chefs quickly understand what they'd need to start cooking
 - Equipment additions should be anything contributors have personally used and would recommend and/or are well-reviewed by reputable sources
 - Measurements should use mass whenever possible. Due to differences and inconsistencies in measuring systems, measuring by volume can lead to an otherwise good recipe having poor results.
