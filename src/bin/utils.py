@@ -461,7 +461,7 @@ $notes
     else:
         summary = ''
 
-    entry_yield = '{:~g}'.format(config.get('yield'))
+    entry_yield = f"{config.get('yield'):~g}"
     prep_time = config.get('prep-time')
     cook_time = config.get('cook-time')
 
@@ -476,9 +476,9 @@ $notes
         name = item['name']
 
         if item['quantity'].units == units.NO_UNIT:
-            text = '{0.magnitude:g} {1}'.format(item['quantity'], name)
+            text = f"{item['quantity'].magnitude:g} {name}"
         else:
-            text = '{0:~g} of {1}'.format(item['quantity'], name)
+            text = f"{item['quantity']:~g} of {name}"
 
         if 'link' in item:
             link = item['link']
