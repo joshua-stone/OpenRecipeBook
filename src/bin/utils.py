@@ -561,6 +561,9 @@ def schema_validator(schema):
 
     return validator
 
+def validate_file_list(schema, infiles):
+    return all(map(lambda infile: validate_file(schema, infile), infiles))
+
 def validate_file(schema, infile):
     validator = schema_validator(schema)
     config = open_yaml(infile)
@@ -568,13 +571,16 @@ def validate_file(schema, infile):
     try:
         if validator.validate(config):
             print(f'File \'{infile}\' appears to be correct')
-            exit(0)
+
+            return True
         else:
             print(validator.errors)
-            exit(1)
+
+            return False
     except Exception as e:
         print(f'File \'{infile}\' appears to be incorrect')
-        exit(1)
+
+        return False
 
 def build_documents(schema, source, destination):
     validator = schema_validator(schema)
