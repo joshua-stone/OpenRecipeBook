@@ -295,7 +295,7 @@ recipe_schema = {
                 'quantity': {
                     'type': 'amount_with_unit',
                     'required': True,
-                    'coerce': lambda value: units.parse_amount_with_unit(value)
+                    'coerce': units.parse_amount_with_unit
                 },
                 'link': {
                     'type': 'string',
