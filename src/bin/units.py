@@ -6,10 +6,12 @@ pattern = r"(?P<magnitude>\d+(?:\.\d+)?)[ ]?(?P<unit>.+)?"
 ureg = UnitRegistry()
 AmountWithUnit = ureg.Quantity
 
+NO_UNIT = 'none'
+
 ureg.define('none = 1')
 ureg.define('serving = 1')
 
-def parse_amount_with_unit(unit_text, default_unit = 'none'):
+def parse_amount_with_unit(unit_text, default_unit = NO_UNIT):
     m = search(pattern, str(unit_text))
 
     if m:

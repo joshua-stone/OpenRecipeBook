@@ -461,7 +461,7 @@ $notes
     else:
         summary = ''
 
-    entry_yield = str(config.get('yield')) + (' serving' if config.get('yield') == 1 else ' servings')
+    entry_yield = '{:~g}'.format(config.get('yield'))
     prep_time = config.get('prep-time')
     cook_time = config.get('cook-time')
 
@@ -474,13 +474,11 @@ $notes
     ingredients = []
     for item in config.get('ingredients'):
         name = item['name']
-        quantity = item['quantity']
-        if 'unit' in item.keys():
-            unit = item.get('unit')
-        else:
-            unit = ''
 
-        text = f'{quantity} {unit} of {name}'
+        if item['quantity'].units == units.NO_UNIT:
+            text = '{0.magnitude:g} {1}'.format(item['quantity'], name)
+        else:
+            text = '{0:~g} of {1}'.format(item['quantity'], name)
 
         if 'link' in item:
             link = item['link']
@@ -598,7 +596,7 @@ def build_documents(schema, source, destination):
         if isfile(source_config) and source_config.endswith('.yml'):
             config_data = open_yaml(source_config)
             if validator.validate(config_data):
-                output_document = convert(config_data)
+                output_document = convert(validator.document)
                 document_filename = splitext(config)[0] + '.adoc'
                 document_file_destination = join(basepath, document_filename)
                 with open(join(destination_path, document_filename), 'w') as out:

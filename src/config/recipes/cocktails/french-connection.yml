@@ -12,12 +12,10 @@ equipment:
           link: 'ref:cocktail-glasses'
 ingredients:
         - name: 'Disaronno Amaretto'
-          unit: 'gram'
-          quantity: 49
+          quantity: 49 grams
           link: 'ref:amaretto'
         - name: 'Rémy Martin VSOP Cognac'
-          unit: 'gram'
-          quantity: 56
+          quantity: 56 grams
           link: 'ref:cognac'
 directions:
         - step: 'Place cocktail shaker on kitchen scale'

@@ -12,27 +12,21 @@ equipment:
           link: 'ref:cocktail-glasses'
 ingredients:
         - name: 'Rémy Martin VSOP Cognac'
-          unit: 'gram'
-          quantity: 56
+          quantity: 56 gram
           link: 'ref:cognac'
         - name: 'Cointreau'
-          unit: 'gram'
-          quantity: 52
+          quantity: 52 gram
           link: 'ref:cointreau'
         - name: 'Fresh lemon juice'
-          unit: 'gram'
-          quantity: 40
+          quantity: 40 grams
         - name: 'Simple Syrup'
-          unit: 'gram'
-          quantity: 20
+          quantity: 20 grams
           link: 'ref:simple-syrup'
         - name: 'Crushed ice'
-          unit: 'gram'
-          quantity: 200
+          quantity: 200 grams
         - name: 'Superfine sugar'
           link: 'ref:superfine-sugar'
-          unit: 'gram'
-          quantity: 25
+          quantity: 25 grams
 directions:
         - step: 'Invert martini glass and line rim with lemon juice'
         - step: 'Invert martini glass and line rim with superfine sugar'
