@@ -4,3 +4,4 @@ include::recipes/cocktails.adoc[]
 
 include::recipes/coffee.adoc[]
 
+include::recipes/desserts.adoc[]
