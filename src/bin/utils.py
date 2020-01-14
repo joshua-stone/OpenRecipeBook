@@ -1,6 +1,7 @@
 from yaml import safe_load, YAMLError
 from sys import exit
-from cerberus import Validator
+import units
+from cerberus import Validator, TypeDefinition
 from string import Template
 from os.path import splitext, basename, isfile, isdir, join
 from os import listdir, mkdir
@@ -11,6 +12,9 @@ from re import findall, search
 class Temperature(Enum):
     Imperial = auto()
     SI = auto()
+
+amount_with_unit_type = TypeDefinition('amount_with_unit', (units.AmountWithUnit,), ())
+Validator.types_mapping['amount_with_unit'] = amount_with_unit_type
 
 __TEMPERATURE_UNIT__ = [Temperature.Imperial]
 
@@ -79,6 +83,16 @@ def generate_link(config):
 def is_ref(field, value, error):
     if not any(value.startswith(item) for item in ['ref:', 'http://', 'https://']):
         error(field, 'link does not use ref syntax')
+
+def coerce_yield(value):
+    return units.parse_amount_with_unit(value, default_unit = units.SERVING)
+
+def coerce_quantity(value):
+    return units.parse_amount_with_unit(value)
+
+def is_unit_supported(field, value, error):
+    if not value.is_unit_supported():
+        error(field, f'has unsupported unit: `{value.unit_text}`')
 
 def is_time(field, value, error):
     time = value.split()
@@ -243,9 +257,10 @@ recipe_schema = {
         'minlength': 1
     },
     'yield': {
-        'type': 'integer',
+        'type': 'amount_with_unit',
         'required': True,
-        'min': 1
+        'coerce': coerce_yield,
+        'check_with': is_unit_supported
     },
     'prep-time': {
         'type': 'string',
@@ -288,14 +303,11 @@ recipe_schema = {
                     'type': 'string',
                     'required': True
                 },
-                'unit': {
-                    'type': 'string',
-                    'empty': True
-                },
                 'quantity': {
-                    'type': 'integer',
+                    'type': 'amount_with_unit',
                     'required': True,
-                    'min': 1
+                    'coerce': coerce_quantity,
+                    'check_with': is_unit_supported
                 },
                 'link': {
                     'type': 'string',
