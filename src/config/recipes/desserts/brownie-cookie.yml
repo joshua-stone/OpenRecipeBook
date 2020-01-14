@@ -18,40 +18,29 @@ equipment:
       link: 'ref:spatula'
 ingredients:
     - name: 'dark chocolate'
-      unit: 'gram'
-      quantity: 150
+      quantity: 150 grams
     - name: 'unsalted butter'
-      unit: 'gram'
-      quantity: 115
+      quantity: 115 grams
     - name: 'large eggs'
       quantity: 2
     - name: 'sugar'
-      unit: 'gram'
-      quantity: 55
+      quantity: 55 grams
     - name: 'brown sugar'
-      unit: 'gram'
-      quantity: 55
+      quantity: 55 grams
     - name: 'salt'
-      unit: 'gram'
-      quantity: 2
+      quantity: 2 grams
     - name: 'Nutella'
-      unit: 'gram'
-      quantity: 50
+      quantity: 50 grams
     - name: 'vanilla extract'
-      unit: 'gram'
-      quantity: 5
+      quantity: 5 grams
     - name: 'all purpose flour'
-      unit: 'gram'
-      quantity: 60
+      quantity: 60 grams
     - name: 'cake flour'
-      unit: 'gram'
-      quantity: 150
+      quantity: 150 grams
     - name: 'baking powder'
-      unit: 'gram'
-      quantity: 2
+      quantity: 2 grams
     - name: 'baking soda'
-      unit: 'gram'
-      quantity: 1
+      quantity: 1 gram
 directions:
     - step: 'Combine 150 grams of dark chocolate and 40 grams of unsalted butter'
     - step: 'Microwave for thirty seconds than mix it'
