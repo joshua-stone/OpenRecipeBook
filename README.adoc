@@ -23,6 +23,17 @@ $ toolbox run --container openrecipebook make
 $ xdg-open builds/recipe-book.pdf
 ....
 
+=== OpenSUSE
+
+....
+$ sudo zypper --non-interactive install make pandoc python3-pip ruby
+$ sudo gem install asciidoctor
+$ sudo gem install asciidoctor-pdf --pre
+$ pip3 install --user cerberus pyyaml
+$ make
+$ xdg-open builds/recipes-book.pdf
+....
+
 == Community
 
 Please check out the official https://discord.gg/sDzCaeH[OpenRecipeBook Discord server]! On there you can discuss ways to improve OpenRecipeBook, make suggestions for recipes, recommend cooking tips, etc.
