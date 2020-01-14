@@ -24,11 +24,9 @@ equipment:
       link: 'ref:coffee-makers'
 ingredients:
     - name: 'Coffee beans'
-      unit: 'grams'
-      quantity: 15
+      quantity: 15 grams
     - name: 'Filtered water'
-      unit: 'grams'
-      quantity: 180
+      quantity: 180 grams
 directions:
     - step: 'Place coffee cup on kitchen scale, then place AeroPress on coffee cup with plunger removed'
     - step: 'Put coffee beans inside hopper of burr grinder'

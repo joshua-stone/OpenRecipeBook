@@ -18,14 +18,11 @@ equipment:
           link: 'ref:plastic-wraps'
 ingredients:
         - name: 'corn flour'
-          unit: 'gram'
-          quantity: 100 
+          quantity: 100 grams
         - name: 'filtered water'
-          unit: 'gram'
-          quantity: 110
+          quantity: 110 grams
         - name: 'fine sea salt'
-          unit: 'gram'
-          quantity: 2
+          quantity: 2 grams
 directions:
         - step: 'Place large mixing bowl onto kitchen scale'
         - step: 'Turn on kitchen scale, setting weight to zero grams'

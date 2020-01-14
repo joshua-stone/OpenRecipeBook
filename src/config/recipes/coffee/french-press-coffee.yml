@@ -19,11 +19,9 @@ equipment:
     - name: 'Spoon'
 ingredients:
     - name: 'Coffee beans'
-      unit: 'grams'
-      quantity: 15
+      quantity: 15 grams
     - name: 'Filtered water'
-      unit: 'grams'
-      quantity: 180
+      quantity: 180 grams
 directions: 
     - step: 'Place coffee cup on kitchen scale, then place French Press on coffee cup with top removed'
     - step: 'Put coffee beans inside hopper of burr grinder'

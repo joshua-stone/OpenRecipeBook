@@ -13,31 +13,23 @@ equipment:
     - name: 'Stove stop or hot plate'
 ingredients:
     - name: 'filtered water'
-      unit: 'grams'
-      quantity: 500
+      quantity: 500 grams
     - name: 'kosher salt'
-      unit: 'grams'
-      quantity: 18
+      quantity: 18 grams
     - name: 'mini cucumbers'
       quantity: 3
     - name: 'mustard seed'
-      unit: 'grams'
-      quantity: 4
+      quantity: 4 grams
     - name: 'fresh dill'
-      unit: 'grams'
-      quantity: 5
+      quantity: 5 grams
     - name: 'garlic'
-      unit: 'grams'
-      quantity: 10
+      quantity: 10 grams
     - name: 'black peppercorns'
-      unit: 'grams'
-      quantity: 3
+      quantity: 3 grams
     - name: 'sliced onion'
-      unit: 'grams'
-      quantity: 6
+      quantity: 6 grams
     - name: 'red pepper flakes'
-      unit: 'gram'
-      quantity: 1
+      quantity: 1 gram
 directions:
     - step: 'Pour water and kosher salt into sauce pan'
     - step: 'Warm water and stir until salt is fully dissolved to create a pickling brine'

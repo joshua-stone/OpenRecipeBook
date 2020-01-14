@@ -12,16 +12,14 @@ equipment:
           link: 'ref:cocktail-glasses'
 ingredients:
         - name: 'Tequila'
-          unit: 'gram'
-          quantity: 49
+          quantity: 49 grams
           link: 'ref:tequila'
         - name: 'Cointreau'
-          unit: 'gram'
-          quantity: 56
+          quantity: 56 grams
           link: 'ref:cointreau'
         - name: 'Coarse kosher salt'
           link: 'ref:kosher-salt'
-          quantity: 25
+          quantity: 25 grams
 directions:
         - step: 'Place cocktail shaker on kitchen scale'
         - step: 'Turn on kitchen scale and wait for it to set to zero with measurement set to grams'

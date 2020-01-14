@@ -1,6 +1,7 @@
 from yaml import safe_load, YAMLError
 from sys import exit
-from cerberus import Validator
+import units
+from cerberus import Validator, TypeDefinition
 from string import Template
 from os.path import splitext, basename, isfile, isdir, join
 from os import listdir, mkdir
@@ -11,6 +12,9 @@ from re import findall, search
 class Temperature(Enum):
     Imperial = auto()
     SI = auto()
+
+amount_with_unit_type = TypeDefinition('amount_with_unit', (units.AmountWithUnit,), ())
+Validator.types_mapping['amount_with_unit'] = amount_with_unit_type
 
 __TEMPERATURE_UNIT__ = [Temperature.Imperial]
 
@@ -243,9 +247,9 @@ recipe_schema = {
         'minlength': 1
     },
     'yield': {
-        'type': 'integer',
+        'type': 'amount_with_unit',
         'required': True,
-        'min': 1
+        'coerce': lambda value: units.parse_amount_with_unit(value, default_unit = 'serving')
     },
     'prep-time': {
         'type': 'string',
@@ -288,14 +292,10 @@ recipe_schema = {
                     'type': 'string',
                     'required': True
                 },
-                'unit': {
-                    'type': 'string',
-                    'empty': True
-                },
                 'quantity': {
-                    'type': 'integer',
+                    'type': 'amount_with_unit',
                     'required': True,
-                    'min': 1
+                    'coerce': units.parse_amount_with_unit
                 },
                 'link': {
                     'type': 'string',
@@ -461,7 +461,7 @@ $notes
     else:
         summary = ''
 
-    entry_yield = str(config.get('yield')) + (' serving' if config.get('yield') == 1 else ' servings')
+    entry_yield = f"{config.get('yield'):~g}"
     prep_time = config.get('prep-time')
     cook_time = config.get('cook-time')
 
@@ -474,13 +474,11 @@ $notes
     ingredients = []
     for item in config.get('ingredients'):
         name = item['name']
-        quantity = item['quantity']
-        if 'unit' in item.keys():
-            unit = item.get('unit')
-        else:
-            unit = ''
 
-        text = f'{quantity} {unit} of {name}'
+        if item['quantity'].units == units.NO_UNIT:
+            text = f"{item['quantity'].magnitude:g} {name}"
+        else:
+            text = f"{item['quantity']:~g} of {name}"
 
         if 'link' in item:
             link = item['link']
@@ -598,7 +596,7 @@ def build_documents(schema, source, destination):
         if isfile(source_config) and source_config.endswith('.yml'):
             config_data = open_yaml(source_config)
             if validator.validate(config_data):
-                output_document = convert(config_data)
+                output_document = convert(validator.document)
                 document_filename = splitext(config)[0] + '.adoc'
                 document_file_destination = join(basepath, document_filename)
                 with open(join(destination_path, document_filename), 'w') as out:
