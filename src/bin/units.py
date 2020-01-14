@@ -26,10 +26,10 @@ OUNCE     = MILLIGRAM * 28349.5231
 POUND     = OUNCE * 16
 
 MILLILITER  = Unit('volume', 1)
-LITER       = Unit('volume', 1000)
-TEASPOON    = Unit('volume', 4.92892159)
-TABLESPOON  = Unit('volume', 14.7867648)
-FLUID_OUNCE = Unit('volume', 28.413075)
+LITER       = MILLILITER * 1000
+TEASPOON    = MILLILITER * 4.92892159
+TABLESPOON  = TEASPOON * 3
+FLUID_OUNCE = MILLILITER * 28.413075
 
 NO_UNIT          = Unit('no unit', 1)
 SERVING          = Unit('serving', 1)
