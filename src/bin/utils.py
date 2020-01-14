@@ -461,7 +461,7 @@ $notes
     else:
         summary = ''
 
-    entry_yield = str(config.get('yield')) + ' serving' if config.get('yield') == 1 else ' servings'
+    entry_yield = str(config.get('yield')) + (' serving' if config.get('yield') == 1 else ' servings')
     prep_time = config.get('prep-time')
     cook_time = config.get('cook-time')
 
