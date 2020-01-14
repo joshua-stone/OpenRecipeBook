@@ -84,16 +84,6 @@ def is_ref(field, value, error):
     if not any(value.startswith(item) for item in ['ref:', 'http://', 'https://']):
         error(field, 'link does not use ref syntax')
 
-def coerce_yield(value):
-    return units.parse_amount_with_unit(value, default_unit = units.SERVING)
-
-def coerce_quantity(value):
-    return units.parse_amount_with_unit(value)
-
-def is_unit_supported(field, value, error):
-    if not value.is_unit_supported():
-        error(field, f'has unsupported unit: `{value.unit_text}`')
-
 def is_time(field, value, error):
     time = value.split()
     if not len(time) == 2:
@@ -259,8 +249,7 @@ recipe_schema = {
     'yield': {
         'type': 'amount_with_unit',
         'required': True,
-        'coerce': coerce_yield,
-        'check_with': is_unit_supported
+        'coerce': lambda value: units.parse_amount_with_unit(value, default_unit = 'serving')
     },
     'prep-time': {
         'type': 'string',
@@ -306,8 +295,7 @@ recipe_schema = {
                 'quantity': {
                     'type': 'amount_with_unit',
                     'required': True,
-                    'coerce': coerce_quantity,
-                    'check_with': is_unit_supported
+                    'coerce': lambda value: units.parse_amount_with_unit(value)
                 },
                 'link': {
                     'type': 'string',
