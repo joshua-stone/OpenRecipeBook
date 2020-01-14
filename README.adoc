@@ -4,6 +4,16 @@ One of the best things about open source is its collaborative nature and the sen
 
 == Building
 
+=== Ubuntu
+
+....
+$ sudo apt install --assume-yes make pandoc python3-yaml python3-pip ruby
+$ sudo gem install asciidoctor-pdf --pre
+$ pip3 install --user cerberus
+$ make
+$ xdg-open builds/recipe-book.pdf
+....
+
 === Fedora/Silverblue
 
 ....
