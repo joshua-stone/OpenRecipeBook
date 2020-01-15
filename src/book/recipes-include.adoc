@@ -1,5 +1,7 @@
 include::recipes/basics.adoc[]
 
+include::recipes/main-course.adoc[]
+
 include::recipes/cocktails.adoc[]
 
 include::recipes/coffee.adoc[]

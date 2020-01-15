@@ -36,7 +36,8 @@ if __name__ == '__main__':
         'basics',
         'cocktails',
         'coffee',
-        'desserts'
+        'desserts',
+        'main-course'
     ]
 
 
