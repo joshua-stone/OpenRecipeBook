@@ -1,0 +1,60 @@
+id: simple-cheeseburger
+name: Simple Cheeseburger
+yield: 1
+prep-time: '5 minutes'
+cook-time: '10 minutes'
+equipment:
+- name: Cast iron skillet
+  link: ref:cast-iron-skillets
+- name: Spatula
+  link: ref:spatulas
+- name: Cutting Board
+  link: ref:cutting-boards
+- name: Chef's Knife
+  link: ref:chefs-knives
+- name: Kitchen Scale
+  link: ref:kitchen-scales
+- name: Small plate
+- name: Stove top or hot plate
+- name: Toaster Oven
+  link: ref:toaster-ovens
+- name: Spoon
+- name: Large Plate
+ingredients:
+- name: ground beef (80% lean, 20% fat)
+  quantity: 150 grams
+- name: potato bun
+  quantity: 1
+  link: ref:hamburger-buns
+- name: onion
+  quantity: 40 grams
+- name: pickle slices
+  quantity: 4
+- name: Ketchup
+  quantity: 10 grams
+  link: ref:ketchup
+- name: extra sharp cheddar
+  quantity: 30 grams
+- name: sea salt
+  quantity: 1 gram
+- name: lard
+  quantity: 50 grams
+directions:
+- step: Preheat cast iron skillet
+- step: Place small plate on kitchen scale, then turn on scale
+- step: Place ground beef on plate to measure patty size
+- step: Work ground beef in both hands to loosen texture, then work into a ball
+  note: Dampening hands with water can help keep ground beef from sticking
+- step: Carefully press ground beef between hands to form a disk, then use palm to smooth out the sides
+- step: Place beef patty on plate, then season the top side with some salt
+- step: Place lard in cast iron skillet and wait for it to melt
+- step: Wait for lard to heat up and begin to smoke, then place patty in the middle of the skillet along with a slice of onion next to the patty
+- step: Cook patty for about 2 minutes (or more depending on desired level of doneness), then flip both patty and onion slice with spatula
+- step: Quickly place extra sharp cheddar on the top of the burger so it can begin to melt
+- step: Cook patty for another two minutes, spooning lard on top of the burger to promote cheese melting
+  note: Tilting the skillet helps for liquids to pool at the bottom for easier scooping
+- step: After another 2 minutes (or more depending on desired level of doneness), remove both patty and onion slice and place on cutting board to rest
+  note: Be sure to place burger near center of cutting board to catch all juices that flow out
+- step: Place potato bun halves face down in toaster oven and toast for a few minutes at [temp:350F] and remove from toaster oven once golden
+- step: Place both potato bun halves face up on large plate, then top both with ketcheup
+- step: Layer the bottom potato bun slice with pickles, followed by onion slice, then hamburger patty, and finally top with the other potato bun half
