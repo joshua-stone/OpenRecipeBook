@@ -2,4 +2,4 @@
 .idea/
 .bundle/
 builds/
-src/bin/__pycache__/
+__pycache__/
