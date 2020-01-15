@@ -1,4 +1,4 @@
-from yaml import safe_load, YAMLError
+from yaml import safe_dump, safe_load, YAMLError
 from sys import exit
 import units
 from cerberus import Validator, TypeDefinition
@@ -120,6 +120,14 @@ def open_yaml(infile):
         exit(1)
 
     return config
+
+def dump_yaml(infile, data):
+    try:
+        with open(infile, 'w') as outfile:
+            outfile.write(safe_dump(data, sort_keys=False))
+    except Exception as e:
+        print(e)
+        exit(1)
 
 ingredient_schema = {
     'id': {
