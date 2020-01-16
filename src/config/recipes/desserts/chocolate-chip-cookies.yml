@@ -21,23 +21,23 @@ equipment:
     - name: 'Stove stop or hot plate'
 ingredients:
     - name: 'all purpose flour'
-      unit: 24 grams
+      quantity: 24 grams
     - name: 'baking soda'
-      unit: 2 grams
+      quantity: 2 grams
     - name: 'unsalted butter'
-      unit: 198.5 grams
+      quantity: 198.5 grams
     - name: 'dark brown sugar'
-      unit: 165 grams
+      quantity: 165 grams
     - name: 'granulated sugar'
-      unit: 100 grams
+      quantity: 100 grams
     - name: 'vanilla extract'
-      unit: 3 grams
+      quantity: 3 grams
     - name: 'salt'
-      unit: 4 grams
+      quantity: 4 grams
     - name: 'egg'
       quantity: 2
     - name: 'semisweet chocolate chips'
-      unit: 106 grams
+      quantity: 106 grams
 directions:
     - step: 'Adjust an oven rack to the middle'
     - step:  'Set the oven to 190 celsius'
