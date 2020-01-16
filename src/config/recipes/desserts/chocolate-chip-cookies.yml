@@ -20,7 +20,7 @@ equipment:
       link: 'ref:kitchen-scales'
     - name: 'Stove stop or hot plate'
 ingredients:
-    - name: 'all purpose flour
+    - name: 'all purpose flour'
       unit: 24 grams
     - name: 'baking soda'
       unit: 2 grams
@@ -40,7 +40,7 @@ ingredients:
       unit: 106 grams
 directions:
     - step: 'Adjust an oven rack to the middle'
-    - step  'Set the oven to 190 celsius'
+    - step:  'Set the oven to 190 celsius'
     - step: 'Line two baking sheets with parchment paper'
     - step: 'In a mxing bowl, sift in 200 grams flour and baking soda'
     - step: 'In a 10 inch skillet melt 142 grams of butter'
