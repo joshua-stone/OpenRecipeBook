@@ -13,6 +13,7 @@ equipment:
   - name: Julep Strainer
     link: ref:julep-strainers
   - name: Kitchen Knife
+  - name: Crushed Ice
 ingredients:
   - name: Hendrick's Gin
     quantity: 2 ounces
