@@ -16,7 +16,8 @@ equipment:
 ingredients:
   - name: Hendrick's Gin
     quantity: 2 ounces
-    note: If choosing to substitute another gin, look for a flavour profile that incorporates citrus and cucumber notes.
+    # TODO: Support notes for ingredients and equipment.
+    # note: If choosing to substitute another gin, look for a flavour profile that incorporates citrus and cucumber notes.
   - name: Dry Vermouth
     quantity: 1 ounce
   - name: Grapefruit Bitters
