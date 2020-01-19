@@ -14,44 +14,44 @@ class Recipe(object):
 
     @property
     def data(self):
-        return dict(self._data)
+        return self._data
 
     def name(self, name):
-        updated = self.data
-        updated['name'] = name
-        return self.__class__(**updated)
+        recipe = join_params(self.data, {'name': name})
+
+        return self.__class__(**recipe)
 
     def servings(self, servings):
-        updated = self.data
-        updated['servings'] = servings
-        return self.__class__(**updated)
+        recipe = join_params(self.data, {'servings': servings})
+
+        return self.__class__(**recipe)
 
     def preptime(self, preptime):
-        updated = self.data
-        updated['preptime'] = preptime
+        recipe = join_params(self.data, {'preptime': preptime})
+
         return self.__class__(**updated)
 
     def cooktime(self, cooktime):
-        updated = self.data
-        updated['cooktime'] = cooktime
-        return self.__class__(**updated)
+        recipe = join_params(self.data, {'cooktime': cooktime})
+
+        return self.__class__(**recipe)
 
     def equipment(self, equipment):
-        updated = self.data
-        updated['equipment'] = equipment
+        recipe = join_params(self.data, {'equipment': equipment})
+
         return self.__class__(**updated)
 
     def ingredients(self, ingredients):
-        updated = self.data
-        updated['ingredients'] = ingredients
+        recipe = join_params(self.data, {'ingredients': ingredients})
+
         return self.__class__(**updated)
 
     def steps(self, steps):
-        updated = self.data
-        updated['steps'] = steps
+        recipe = join_params(self.data, {'step': steps})
+
         return self.__class__(**updated)
 
     def notes(self, notes):
-        updated = self.data
-        updated['notes'] = notes
-        return self.__class__(**updated)
+        recipe = join_params(self.data, {'notes': notes})
+
+        return self.__class__(**recipe)
