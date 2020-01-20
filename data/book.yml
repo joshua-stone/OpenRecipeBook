@@ -1,0 +1,12 @@
+- main_book
+  - title: OpenRecipeBook Main Edition
+
+- quick_recipes:
+  - title: OpenRecipeBook Quick Recipes Edition
+  - totaltime: 30 minutes
+
+- cocktail_book
+  - title: OpenRecipeBook Cocktail Edition
+  - tags:
+    - cocktail
+    - liquor
