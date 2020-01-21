@@ -1,8 +1,7 @@
-id: 'orange-margarita'
 name: 'Orange Margarita'
-yield: 1
-prep-time: '1 minute'
-cook-time: '2 minutes'
+servings: 1
+preptime: '1 minute'
+cooktime: '2 minutes'
 equipment:
         - name: 'Kitchen Scale'
           link: 'ref:kitchen-scales'

@@ -1,8 +1,7 @@
-id: 'french-connection'
 name: 'French Connection'
-yield: 1
-prep-time: '2 minutes'
-cook-time: '2 minutes'
+servings: 1
+preptime: '2 minutes'
+cooktime: '2 minutes'
 equipment:
         - name: 'Kitchen Scale'
           link: 'ref:kitchen-scales'

@@ -1,8 +1,7 @@
-id: 'brownie-cookies'
 name: 'Brownie Cookies'
-yield: 30
-prep-time: '75 minutes'
-cook-time: '12 minutes'
+servings: 30
+preptime: '75 minutes'
+cooktime: '12 minutes'
 equipment:
     - name: 'Whisk'
       link: 'ref:whisk'

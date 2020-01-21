@@ -1,8 +1,7 @@
-id: bloody-ceasar
 name: Bloody Ceasar
-yield: 1 serving
-prep-time: 3 minutes
-cook-time: 2 minutes
+servings: 1 serving
+preptime: 3 minutes
+cooktime: 2 minutes
 equipment:
   - name: Cocktail Shaker
     link: ref:cocktail-shakers

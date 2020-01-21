@@ -1,8 +1,7 @@
-id: 'simple-dill-pickles'
 name: 'Simple Dill Pickles'
-yield: 3
-prep-time: '5 minutes'
-cook-time: '10 days'
+servings: 3
+preptime: '5 minutes'
+cooktime: '10 days'
 equipment:
     - name: 'Mason Jar'
       link: 'ref:mason-jars'

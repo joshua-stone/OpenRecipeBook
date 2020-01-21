@@ -1,8 +1,7 @@
-id: 'aeropress-coffee'
 name: 'AeroPress Coffee'
-yield: 1
-prep-time: '2 minutes'
-cook-time: '1 minute'
+servings: 1
+preptime: '2 minutes'
+cooktime: '1 minute'
 equipment:
     - name: 'Burr Grinder'
       link: 'ref:coffee-grinder'

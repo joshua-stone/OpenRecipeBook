@@ -1,6 +1,6 @@
 class Recipe(object):
     def __init__(self, name='', servings=1, preptime='1 min', cooktime='1 min', equipment=[],
-                 ingredients=[], steps=[], notes=[]):
+                 ingredients=[], steps=[], directions=[], notes=[]):
         self._data = {
             'name': name,
             'servings': servings,
@@ -9,6 +9,7 @@ class Recipe(object):
             'equipment': equipment,
             'ingredients': ingredients,
             'steps': steps,
+            'directions': directions,
             'notes': notes
         }
 

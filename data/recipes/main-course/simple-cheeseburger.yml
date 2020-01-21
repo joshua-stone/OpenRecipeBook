@@ -1,8 +1,7 @@
-id: simple-cheeseburger
 name: Simple Cheeseburger
-yield: 1
-prep-time: '5 minutes'
-cook-time: '10 minutes'
+servings: 1
+preptime: '5 minutes'
+cooktime: '10 minutes'
 equipment:
 - name: Cast iron skillet
   link: ref:cast-iron-skillets

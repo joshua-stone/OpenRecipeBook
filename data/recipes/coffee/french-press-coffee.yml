@@ -1,8 +1,7 @@
-id: 'french-press-coffee'
 name: 'French Press Coffee'
-yield: 1
-prep-time: '1 minutes'
-cook-time: '4 minutes'
+servings: 1
+preptime: '1 minutes'
+cooktime: '4 minutes'
 equipment:
     - name: 'Burr Grinder'
       link: 'ref:coffee-grinder'

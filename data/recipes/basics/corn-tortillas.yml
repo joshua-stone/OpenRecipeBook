@@ -1,8 +1,7 @@
-id: 'corn-tortillas'
 name: 'Corn tortillas'
-yield: 4
-prep-time: '1 minute'
-cook-time: '20 minutes'
+servings: 4
+preptime: '1 minute'
+cooktime: '20 minutes'
 equipment:
         - name: 'Torilla Press'
           link: 'ref:tortilla-presses'
