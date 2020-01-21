@@ -3,12 +3,13 @@
 import sys
 sys.path.append('lib')
 
-from os.path import join
+from os.path import join, dirname, splitext
 from helpers import list_files, open_yaml
 from sys import exit
 from argparse import ArgumentParser
 
 from recipe import Recipe
+from recipeasciidocpresenter import RecipeAsciidocPresenter
 
 def main():
     parser = ArgumentParser(description='Tool for generating recipe books')
@@ -27,11 +28,27 @@ def main():
         exit(1)
 
     recipe_dir = join(datadir, 'recipes')
-    recipe_files = list_files(recipe_dir, '*.yml')
+    recipe_files = sorted(list_files(recipe_dir, '*.yml'))
+
+    sections = {}
 
     for infile in recipe_files:
-         data = open_yaml(join(recipe_dir, infile))
-         recipe = Recipe(**data)
+        recipe_id = f'recipe:{splitext(infile)[0]}'
+        data = open_yaml(join(recipe_dir, infile))
+        recipe = Recipe(**data, recipe_id=recipe_id)
+
+        section = dirname(infile)
+
+        if not section in sections:
+            sections[section] = []
+
+        sections[section].append(recipe)
+
+    for section, recipes in sections.items():
+        section
+        for recipe in recipes:
+            a = RecipeAsciidocPresenter(recipe)
+            print(a.render())
 
 if __name__ == '__main__':
     main()
