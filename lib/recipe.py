@@ -1,8 +1,8 @@
 class Recipe(object):
-    def __init__(self, recipe_id='', name='', summary='', servings=1, preptime='1 min', cooktime='1 min', equipment=[],
-                 ingredients=[], steps=[], directions=[], notes=[]):
+    def __init__(self, config_id='', name='', summary='', servings=1, preptime='1 min', cooktime='1 min', equipment=[],
+                 ingredients=[], steps=[], directions=[], notes=[], tags=[]):
         self._data = {
-            'recipe_id': recipe_id,
+            'config_id': config_id,
             'name': name,
             'summary': summary,
             'servings': servings,
@@ -12,15 +12,16 @@ class Recipe(object):
             'ingredients': ingredients,
             'steps': steps,
             'directions': directions,
-            'notes': notes
+            'notes': notes,
+            'tags': tags
         }
 
     @property
     def data(self):
         return self._data
 
-    def recipe_id(self, recipe_id):
-        recipe = join_params(self.data, {'recipe_id': recipe_id})
+    def config_id(self, config_id):
+        recipe = join_params(self.data, {'config_id': config_id})
 
         return self.__class__(**recipe)
 
@@ -68,3 +69,9 @@ class Recipe(object):
         recipe = join_params(self.data, {'notes': notes})
 
         return self.__class__(**recipe)
+
+    def tags(self, tags):
+        recipe = join_params(self.data, {'tags': tags})
+
+        return self.__class__(**recipe)
+

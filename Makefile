@@ -1,18 +1,19 @@
+CONFIG=data/book.yml
 DESTINATION=builds
 FLAGS=--safe-mode=safe --attribute=allow-uri-read
-INPUT=builds/book/index.adoc
+INPUT=builds/main_book.adoc
 OUTPUT=$(DESTINATION)/recipe-book
 TEMPERATURE_SYSTEM=imperial
 ASCIIDOCTOR := bundle exec asciidoctor
 ASCIIDOCTOR-PDF := bundle exec asciidoctor-pdf
-export PATH := src/bin:$(PATH)
+export PATH := bin:$(PATH)
 
 .PHONY: all
 all: asciidoc docbook html pdf epub
 
 .PHONY: asciidoc
 asciidoc:
-	build.py --temperature=$(TEMPERATURE_SYSTEM) src $(DESTINATION)
+	generate.py --configfile=$(CONFIG) --temperature=$(TEMPERATURE_SYSTEM) --builddir=$(DESTINATION)
 
 .PHONY: docbook
 docbook: asciidoc

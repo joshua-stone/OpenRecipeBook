@@ -1,12 +1,11 @@
-- main_book
-  - title: OpenRecipeBook Main Edition
-
-- quick_recipes:
-  - title: OpenRecipeBook Quick Recipes Edition
-  - totaltime: 30 minutes
-
-- cocktail_book
-  - title: OpenRecipeBook Cocktail Edition
-  - tags:
-    - cocktail
-    - liquor
+author: 'Joshua Stone'
+email: 'joshua.gage.stone@gmail.com'
+editions:
+  - book_id: main_book
+    title: OpenRecipeBook Main Edition
+  - book_id: quick_recipes
+    title: OpenRecipeBook Quick Recipes Edition
+    totaltime: 30 minutes
+  - book_id: cocktail_book
+    title: OpenRecipeBook Cocktail Edition
+    tags: { cocktail, liquor }

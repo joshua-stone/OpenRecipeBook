@@ -10,8 +10,8 @@ class RecipeAsciidocPresenter(object):
         return self._data
 
     @property
-    def recipe_id(self):
-        rendered = f"[[{ref_encode(self.data['recipe_id'])}]]"
+    def config_id(self):
+        rendered = f"[[{ref_encode(self.data['config_id'])}]]"
 
         return rendered
 
@@ -117,7 +117,7 @@ class RecipeAsciidocPresenter(object):
 
     def render(self):
         recipe_parts = [
-            self.recipe_id,
+            self.config_id,
             self.name,
             self.summary,
             self.servings,
