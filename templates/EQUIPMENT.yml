@@ -1,0 +1,9 @@
+name: equipment name
+products:
+- name: product name
+  reviews:
+  - name: reviewer name
+    link: https://reviewer.com/review
+  stores:
+  - name: store name
+    link: https://store.com/product

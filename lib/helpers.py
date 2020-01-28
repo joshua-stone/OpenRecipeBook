@@ -1,4 +1,4 @@
-from yaml import safe_load
+from yaml import safe_load, safe_dump
 from os import walk, mkdir
 from os.path import join, relpath
 from glob import glob
@@ -94,6 +94,14 @@ def open_yaml(infile):
         config = safe_load(stream)
 
     return config
+
+def dump_yaml(infile, data):
+    try:
+        with open(infile, 'w') as outfile:
+            outfile.write(safe_dump(data, sort_keys=False))
+    except Exception as e:
+        print(e)
+        exit(1)
 
 def join_params(old_params, new_params):
     new_dict = dict(list(old_params.items()) + list(new_params.items()))

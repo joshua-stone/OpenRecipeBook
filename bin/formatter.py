@@ -1,7 +1,10 @@
 #!/usr/bin/env python3
 
+import sys
+sys.path.append('lib')
+
 from sys import exit, argv
-from utils import dump_yaml, open_yaml
+from helpers import dump_yaml, open_yaml
 
 if __name__ == '__main__':
     try:

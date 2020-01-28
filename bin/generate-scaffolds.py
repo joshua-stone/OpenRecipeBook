@@ -2,6 +2,8 @@
 
 from scaffold_generators.ingredient import run_ingredient_scaffold_generator
 from sys import argv, exit
+import sys
+sys.path.append('lib')
 
 TYPE_MAPPINGS = {
     'ingredient': run_ingredient_scaffold_generator

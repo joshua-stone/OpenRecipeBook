@@ -12,12 +12,12 @@ from argparse import ArgumentParser
 from equipment import Equipment
 from recipe import Recipe
 from ingredient import Ingredient
-from recipeasciidocpresenter import RecipeAsciidocPresenter
-from equipmentasciidocpresenter import EquipmentAsciidocPresenter
-from ingredientasciidocpresenter import IngredientAsciidocPresenter
-from coverasciidocpresenter import CoverAsciidocPresenter
+from asciidocpresenters.recipe import RecipeAsciidocPresenter
+from asciidocpresenters.equipment import EquipmentAsciidocPresenter
+from asciidocpresenters.ingredient import IngredientAsciidocPresenter
+from asciidocpresenters.cover import CoverAsciidocPresenter
 from chapter import Chapter
-from chapterasciidocpresenter import ChapterAsciidocPresenter
+from asciidocpresenters.chapter import ChapterAsciidocPresenter
 def main():
     parser = ArgumentParser(description='Tool for generating recipe books')
     parser.add_argument('-b', '--builddir', type=str, default='builds', help='Destination for built documents')
@@ -71,7 +71,10 @@ def main():
             '\n'.join(rendered_recipes)
         ]
         fname = f"{edition['book_id']}.adoc"
-        build_destination = join(builddir, fname)
+        adoc_destination = join(builddir, 'asciidoc')
+        if not isdir(adoc_destination):
+            mkdir(adoc_destination)
+        build_destination = join(adoc_destination, fname)
         with open(build_destination, 'w') as f:
             f.write('\n'.join(book))
 

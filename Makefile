@@ -1,7 +1,7 @@
 CONFIG=data/book.yml
 DESTINATION=builds
-FLAGS=--safe-mode=safe --attribute=allow-uri-read
-INPUT=builds/main_book.adoc
+FLAGS=--safe-mode=secure --attribute=allow-uri-read
+INPUT=builds/asciidoc/*.adoc
 OUTPUT=$(DESTINATION)/recipe-book
 TEMPERATURE_SYSTEM=imperial
 ASCIIDOCTOR := bundle exec asciidoctor
@@ -17,19 +17,22 @@ asciidoc:
 
 .PHONY: docbook
 docbook: asciidoc
-	$(ASCIIDOCTOR) --backend=docbook $(FLAGS) $(INPUT) --out-file=$(OUTPUT).xml
+	$(ASCIIDOCTOR) --backend=docbook $(FLAGS) $(INPUT) --destination-dir=$(DESTINATION)/docbook
 
 .PHONY: pdf
 pdf: asciidoc
-	$(ASCIIDOCTOR-PDF) ${FLAGS} $(INPUT) --out-file=$(OUTPUT).pdf
+	$(ASCIIDOCTOR-PDF) ${FLAGS} $(INPUT) --destination-dir=$(DESTINATION)/pdf
 
 .PHONY: html
 html:	asciidoc
-	$(ASCIIDOCTOR) --backend=html5 $(FLAGS) $(INPUT) --out-file=$(OUTPUT).html
+	$(ASCIIDOCTOR) --backend=html5 $(FLAGS) $(INPUT) --destination-dir=$(DESTINATION)/html
 
 .PHONY: epub
 epub:	docbook
-	pandoc --from docbook --to epub $(OUTPUT).xml -o $(OUTPUT).epub
+	mkdir -p builds/epub
+	for file in `cd builds/docbook/ && find -name '*.xml'`; do \
+	    echo pandoc --from docbook --to epub builds/docbook/$${file} -o builds/epub/$${file%.*}.epub ; \
+	done
 
 .PHONY: clean
 clean:
