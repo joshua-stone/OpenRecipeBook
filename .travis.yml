@@ -7,7 +7,7 @@ install:
   - pip install -r requirements.txt
   - bundle install
 script:
-  - src/bin/checkschema.py equipment src/config/equipment/*.yml
-  - src/bin/checkschema.py ingredient src/config/ingredients/*.yml
-  - src/bin/checkschema.py recipe src/config/recipes/**/*.yml
+  - bin/checkschema.py equipment data/equipment/*.yml
+  - bin/checkschema.py ingredient data/ingredients/*.yml
+  - bin/checkschema.py recipe data/recipes/**/*.yml
   - make all
