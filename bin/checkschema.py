@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 
-from utils import validate_file_list
+import sys
+sys.path.append('lib')
+
+from validators import validate_file_list
 from sys import exit, argv
 
 if __name__ == '__main__':
