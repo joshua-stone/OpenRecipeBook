@@ -238,6 +238,15 @@ recipe_schema = {
             'required': False,
             'minlength': 1
         }
+    },
+    'tags':  {
+        'type': 'list',
+        'required': False,
+        'schema': { 
+            'type': 'string',
+            'required': False,
+            'minlength': 1
+        }
     }
 }
 

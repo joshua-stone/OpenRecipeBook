@@ -26,3 +26,4 @@ directions:
         - step: 'Add liquid ingredients to cocktail shaker, hitting Tare between each addition'
         - step:  'Place lid on cocktail shaker, then hold firmly, and shake vigorously for about 10 seconds'
         - step: 'Pour cocktail into martini glass'
+tags: [cocktail, tequila, cointreau, margarita, orange]

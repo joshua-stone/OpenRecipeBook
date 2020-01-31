@@ -35,3 +35,4 @@ directions:
     - step: 'Push plunger down until touching surface of water'
     - step: 'Wait four minutes before pushing plunger down'
     - step: 'Pour coffee into coffee cup'
+tags: [coffee, french press]

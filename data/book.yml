@@ -8,4 +8,4 @@ editions:
     totaltime: 30 minutes
   - book_id: cocktail_book
     title: OpenRecipeBook Cocktail Edition
-    tags: { cocktail, liquor }
+    tags: [cocktail, liquor]

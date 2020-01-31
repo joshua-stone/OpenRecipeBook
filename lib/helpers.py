@@ -139,7 +139,8 @@ def generate_section(directory, namespace, template):
 
 def filter_recipe(recipe, edition):
     if edition.tags:
-        if not set(edition.tags).intersection(recipe.data['tags']):
+        if not set(edition.tags).intersection(set(recipe.data['tags'])):
+            print(recipe.data['tags'])
             return False
     if edition.totaltime:
         if not (parse_time(recipe.data['preptime']) + parse_time(recipe.data['cooktime'])) <= parse_time(edition.totaltime):

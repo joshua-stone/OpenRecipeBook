@@ -39,3 +39,4 @@ directions:
     - step: 'Move Aeropress off of kitchen scale onto countertop surface'
     - step: 'Put plunger onto AeroPress'
     - step: 'Wait one minute, then push plunger down until a hissing sound occurs'
+tags: [coffee, aeropress]

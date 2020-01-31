@@ -35,3 +35,4 @@ directions:
         - step: 'Add liquid ingredients in no particular order, hitting Tare between each addition added'
         - step: 'Place lid on cocktail shaker, then shake vigorously for about 10 seconds'
         - step: 'Pour cocktail into martini glass'
+tags: [cocktail, sidecar, cognac, cointreau]

@@ -23,4 +23,4 @@ directions:
         - step: 'Add liquid ingredients to cocktail shaker, hitting Tare between each addition'
         - step: 'Place lid on cocktail shaker, hold firmly, then shake vigorously for about 10 seconds'
         - step: 'Pour cocktail into martini glass'
-
+tags: [cocktail, french connection, amaretto, cognac]
