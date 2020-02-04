@@ -17,11 +17,11 @@ ingredients:
 - name: pure vanilla extract
   quantity: 5 grams
 directions:
-- step: Place Mixing bowl on kitchen scale, turning on with unit set to zero
+- step: Place mixing bowl on kitchen scale, then turn on scale with unit set to zero grams
 - step: Add all ingredients into mixing bowl, hitting Tare between each one
-- step: Remove mixing bowl and hold firmly with one hand
-- step: Whisk cream mixture vigorously with for about five minutes or until it reachs stiff peaks
-  note: Be sure to not overwhip mixture -- it should hold its shape firmly and stick to whisk 
+- step: Place mixing bowl on a steady surface and hold firmly with one hand while holding whisk in the other hand
+- step: Whisk cream mixture vigorously for about five minutes or until it reachs stiff peaks
+  note: Be sure to not overwhip the cream -- it should have a smooth appearance and hold its shape firmly
 tags:
 - whipped cream
 - dessert topping
