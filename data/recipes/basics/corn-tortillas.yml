@@ -1,0 +1,52 @@
+name: Corn tortillas
+servings: 4
+preptime: 1 minute
+cooktime: 20 minutes
+equipment:
+- name: Torilla Press
+  link: equipment:tortilla-presses
+- name: Kitchen Scale
+  link: equipment:kitchen-scales
+- name: Large Mixing Bowls
+  link: equipment:mixing-bowls
+- name: Cast Iron Skillet
+  link: equipment:cast-iron-skillets
+- name: Fish Spatula
+  link: equipment:fish-spatulas
+- name: Plastic Wrap
+  link: equipment:plastic-wraps
+ingredients:
+- name: corn flour
+  quantity: 100 grams
+- name: filtered water
+  quantity: 110 grams
+- name: fine sea salt
+  quantity: 2 grams
+directions:
+- step: Place large mixing bowl onto kitchen scale
+- step: Turn on kitchen scale, setting weight to zero grams
+- step: Pour corn flour and salt into mixing bowl
+- step: Pour water into mixing bowl, covering flour evenly
+- step: Hold edge of bowl with one hand, then mix together water and corn flour with
+    other hand
+  note: 'Note: A little extra water or flour may have to be added if mixture is too
+    dry or sticky'
+- step: Form dough into a ball and place plastic wrap on top to keep it from drying
+    out
+- step: Wait about 15 minutes
+- step: Uncover dough, then divide up dough into four parts, each about 52 grams
+- step: Roll each part into a ball
+- step: Pull freezer bag apart at the seams, then place in tortilla press
+- step: Preheat cast iron skillet until almost smoking
+- step: Place flour ball around the center of tortilla press between halves of freezer
+    bag, then close lid and press down for a brief moment
+- step: Carefully lift tortilla out of tortilla press with spatula and place in center
+    of cast iron skillet
+- step: Wait about a minute for tortilla to cook and bubble before flipping
+- step: Once fully cooked on both sides, remove tortilla from skillet and store someplace
+    to keep warm
+- step: Repeat steps 12 - 15 for the rest of the batch
+tags:
+- tortillas
+- corn
+- tacos

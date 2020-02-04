@@ -1,0 +1,48 @@
+name: 'Simple Dill Pickles'
+servings: 3
+preptime: '5 minutes'
+cooktime: '10 days'
+equipment:
+    - name: 'Mason Jar'
+      link: 'equipment:mason-jars'
+    - name: 'Sauce Pan'
+      link: 'equipment:sauce-pans'
+    - name: 'Kitchen Scale'
+      link: 'equipment:kitchen-scales'
+    - name: 'Stove stop or hot plate'
+ingredients:
+    - name: 'filtered water'
+      quantity: 500 grams
+    - name: 'kosher salt'
+      quantity: 18 grams
+    - name: 'mini cucumbers'
+      quantity: 3
+    - name: 'mustard seed'
+      quantity: 4 grams
+    - name: 'fresh dill'
+      quantity: 5 grams
+    - name: 'garlic'
+      quantity: 10 grams
+    - name: 'black peppercorns'
+      quantity: 3 grams
+    - name: 'sliced onion'
+      quantity: 6 grams
+    - name: 'red pepper flakes'
+      quantity: 1 gram
+directions:
+    - step: 'Pour water and kosher salt into sauce pan'
+    - step: 'Warm water and stir until salt is fully dissolved to create a pickling brine'
+    - step: 'Place mason jar on kitchen scale with top removed, then turn on scale'
+    - step: 'Place mustard seed, fresh dill, garlic, black peppercorns, red pepper flakes, and sliced onion inside mason jar'
+    - step: 'Carefully put pickles into mason jar, making sure that they can fit snuggled inside'
+      note: 'Tilting mason jar helps to keep pickles from moving around during this step'
+    - step: 'Carefully ill mason jar to the top with pickling brine, being sure to fully submerge pickles'
+    - step: 'Seal mason jar, then flip a few times to let ingredients move around in brine'
+    - step: 'Place jar in fridge for 10 days, flipping at least twice a day to promote flavor'
+tags:
+- pickles
+- dill
+- cucumbers
+- garlic
+- pepper
+- onion

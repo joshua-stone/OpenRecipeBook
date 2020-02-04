@@ -1,0 +1,28 @@
+name: 'Coffee Makers'
+products:
+        - name: 'Bodum Chambord French Press'
+          reviews:
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/best-french-press/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Bodum-Chambord-French-Coffee-Stainless/dp/B00005LM0R'
+
+
+        - name: 'AeroPress Coffee Maker'
+          reviews:
+                  - name: 'The Wirecutter'
+                    link: 'https://www.amazon.com/AeroPress-Coffee-Espresso-Maker-Bitterness/dp/B0047BIWSK'
+          stores:
+                  - name: 'AeroPress'
+                    link: 'https://aeropress.com/product/aeropress-coffee-maker/'
+                  - name: 'Amazon'
+                    link: 'https://aeropress.com/product/aeropress-coffee-maker/'
+
+        - name: 'Fellow Prismo AeroPress Attachment'
+          reviews:
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/gifts/gifts-for-coffee-lovers/'
+          stores:
+                  - name: 'Fellow'
+                    link: 'https://fellowproducts.com/products/prismo/'

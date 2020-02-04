@@ -1,0 +1,52 @@
+name: Simple Cornbread
+servings: 6
+preptime: 15 minutes
+cooktime: 25 minutes
+equipment:
+- name: Mixing bowl
+  link: equipment:mixing-bowls
+- name: Whisk
+  link: equipment:whisk
+- name: Iron skillet
+  link: equipment:iron-skillet
+- name: Spatula
+  link: equipment:spatula
+- name: Kitchen Scale
+  link: equipment:kitchen-scales
+- name: Stove stop or hot plate
+- name: Oven
+ingredients:
+- name: coarsely cornmeal
+  quantity: 256 grams
+- name: kosher salt
+  quantity: 4 grams
+- name: baking soda
+  quantity: 2 grams
+- name: baking powder
+  quantity: 2 grams
+- name: large egg
+  quantity: 2
+- name: butter milk
+  quantity: 510 grams
+- name: lard
+  quantity: 113 grams
+directions:
+- step: Preheat the oven to [temp:220C]
+- step: Combine cornmeal, kosher salt, baking soda, and baking powder onto a lage
+    mixing bowl
+- step: In a different bowl whisk together the eggs and buttermilk
+- step: Combine the cornmeal mixture with liquid mixture
+  note: You may add more cornmeal until desired thickness, should be thicker than
+    pancake mix
+- step: With medium heat melt the lard on a large iron skillet
+- step: Mix half of the melted lard to the cornbread mixture
+- step: Set the heat between medium high
+- step: When the skillet is riping hot carefully add the cornbread mixture and smooth
+    it out
+- step: Bake it in the oven for 20 to 25 minutes, until golden brown in the center
+    and deep golden brown around the edges
+  note: Preferably cool the cornbread for 10 minutes before serving
+tags:
+- cornbread
+- cornmeal
+- buttermilk

@@ -1,0 +1,6 @@
+name: ingredient name
+products:
+- name: product name
+  stores:
+  - name: store name
+    link: https://store.com/product
