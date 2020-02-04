@@ -1,7 +1,7 @@
 name: recipe name
-yield: 1
-prep-time: 1 minute
-cook-time: 1 minute
+servings: 1
+preptime: 1 minute
+cooktime: 1 minute
 equipment:
 - name: equipment name
   link: equipment:link_id
