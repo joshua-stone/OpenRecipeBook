@@ -1,9 +1,0 @@
-[[cast-iron-skillets]]
-=== Skillets
-
-|===
-| Product | Reviews | Where to buy
-| Lodge Cast Iron 12-inch Skillet
-| https://thewirecutter.com/reviews/best-cast-iron-skillet/[The Wirecutter]
-| https://www.amazon.com/Lodge-Skillet-Pre-Seasoned-Ready-Stove/dp/B00006JSUB[Amazon]
-|===

@@ -1,8 +1,0 @@
-[[freezer-bags]]
-=== Freezer Bags
-|===
-| Product | Reviews | Where to buy
-| Ziplock Freezer Bags 1-gallon
-| https://www.youtube.com/watch?v=n1Oj8oMFqUY[America's Test Kitchen]
-| https://www.amazon.com/Ziploc-Freezer-Bags-Gallon-Count/dp/B00CQAHOCO[Amazon]
-|===

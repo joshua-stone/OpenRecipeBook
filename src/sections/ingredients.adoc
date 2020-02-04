@@ -1,5 +1,0 @@
-== Ingredients
-
-include::ingredients/corn-flour.adoc[]
-
-include::ingredients/turbinado-sugar.adoc[]
