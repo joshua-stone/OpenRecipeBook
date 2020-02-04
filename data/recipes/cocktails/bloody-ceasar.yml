@@ -4,11 +4,11 @@ preptime: 3 minutes
 cooktime: 2 minutes
 equipment:
   - name: Cocktail Shaker
-    link: ref:cocktail-shakers
+    link: equipment:cocktail-shakers
   - name: Highball Glass
-    link: ref:highball-glasses
+    link: equipment:highball-glasses
   - name: Jigger
-    link: ref:japanese-jigger
+    link: equipment:japanese-jigger
   - name: Cocktail Spear
   - name: Straw
 ingredients:
@@ -44,4 +44,7 @@ directions:
   - step: Skewer three mini dill pickles onto the cocktail spear. Balance spear on rim of glass as garnish.
   - step: Squeeze the lemon wedge over the drink, then drop it in.
     note: Alternatively, notch the wedge onto the edge of the glass.
-tags: [cocktail, bloody ceasar, vodka]
+tags:
+- cocktail
+- bloody ceasar
+- vodka

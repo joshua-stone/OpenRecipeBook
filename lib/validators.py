@@ -9,7 +9,7 @@ amount_with_unit_type = TypeDefinition('amount_with_unit', (units.AmountWithUnit
 Validator.types_mapping['amount_with_unit'] = amount_with_unit_type
 
 def is_ref(field, value, error):
-    if not any(value.startswith(item) for item in ['ref:', 'http://', 'https://']):
+    if not any(value.startswith(item) for item in ['equipment:', 'ingredient:', 'recipe:', 'http://', 'https://']):
         error(field, 'link does not use ref syntax')
 
 def is_time(field, value, error):

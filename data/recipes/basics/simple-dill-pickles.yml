@@ -4,11 +4,11 @@ preptime: '5 minutes'
 cooktime: '10 days'
 equipment:
     - name: 'Mason Jar'
-      link: 'ref:mason-jars'
+      link: 'equipment:mason-jars'
     - name: 'Sauce Pan'
-      link: 'ref:sauce-pans'
+      link: 'equipment:sauce-pans'
     - name: 'Kitchen Scale'
-      link: 'ref:kitchen-scales'
+      link: 'equipment:kitchen-scales'
     - name: 'Stove stop or hot plate'
 ingredients:
     - name: 'filtered water'
@@ -39,4 +39,10 @@ directions:
     - step: 'Carefully ill mason jar to the top with pickling brine, being sure to fully submerge pickles'
     - step: 'Seal mason jar, then flip a few times to let ingredients move around in brine'
     - step: 'Place jar in fridge for 10 days, flipping at least twice a day to promote flavor'
-tags: pickles, dill, cucumbers, garlic, pepper, onion
+tags:
+- pickles
+- dill
+- cucumbers
+- garlic
+- pepper
+- onion

@@ -4,19 +4,19 @@ preptime: 20 minutes
 cooktime: 17 minutes
 equipment:
 - name: Whisk
-  link: ref:whisk
+  link: equipment:whisk
 - name: Baking Sheet
-  link: ref:baking-sheet
+  link: equipment:baking-sheet
 - name: Mixing Bowls
-  link: ref:mixing-bowls
+  link: equipment:mixing-bowls
 - name: Sifter
-  link: ref:sifter
+  link: equipment:sifter
 - name: Spatula
-  link: ref:spatula
+  link: equipment:spatula
 - name: Sauce Pan
-  link: ref:sauce-pan
+  link: equipment:sauce-pan
 - name: Kitchen Scale
-  link: ref:kitchen-scales
+  link: equipment:kitchen-scales
 - name: Stove stop or hot plate
 ingredients:
 - name: all purpose flour

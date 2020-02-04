@@ -77,8 +77,8 @@ def generate_link(config):
         else:
             link = ''
 
-        if link.startswith('ref:'):
-            line = f'<<{link[4:]}, {name}>>'
+        if link.startswith('equipment:') or link.startswith('ingredient:') or link.startswith('recipe:'):
+            line = f"<<{ref_encode(link)}, {name}>>"
         elif link.startswith('http://') or link.startswith('https://'):
             line = f'{link}[{name}]'
         else:
@@ -140,7 +140,6 @@ def generate_section(directory, namespace, template):
 def filter_recipe(recipe, edition):
     if edition.tags:
         if not set(edition.tags).intersection(set(recipe.data['tags'])):
-            print(recipe.data['tags'])
             return False
     if edition.totaltime:
         if not (parse_time(recipe.data['preptime']) + parse_time(recipe.data['cooktime'])) <= parse_time(edition.totaltime):
@@ -160,10 +159,9 @@ def filter_section(recipe_section, edition):
 
 def generate_editions(recipe_section, config_file):
     config = open_yaml(config_file)
-    #for edition in config['editions']:
-    config = BookConfig(config)
+    bookconfig = BookConfig(config)
     editions = []
-    for edition in config:
+    for edition in bookconfig:
         filtered_recipes = filter_section(recipe_section, edition)
         editions.append({'cover': Cover(title=edition.title, author=edition.author, email=edition.email), 'book_id': edition.book_id,'recipes': filtered_recipes})
 

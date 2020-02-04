@@ -4,15 +4,15 @@ preptime: 15 minutes
 cooktime: 25 minutes
 equipment:
 - name: Mixing bowl
-  link: ref:mixing-bowls
+  link: equipment:mixing-bowls
 - name: Whisk
-  link: ref:whisk
+  link: equipment:whisk
 - name: Iron skillet
-  link: ref:iron-skillet
+  link: equipment:iron-skillet
 - name: Spatula
-  link: ref:spatula
+  link: equipment:spatula
 - name: Kitchen Scale
-  link: ref:kitchen-scales
+  link: equipment:kitchen-scales
 - name: Stove stop or hot plate
 - name: Oven
 ingredients:

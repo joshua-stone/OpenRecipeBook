@@ -56,7 +56,7 @@ class RecipeAsciidocPresenter(object):
             link = generate_link(item)
             equipment.append('* ' + link)
 
-        rendered = '\n'.join(equipment) + '\n'
+        rendered = 'Equipment:\n\n' + '\n'.join(equipment) + '\n'
 
         return rendered
 

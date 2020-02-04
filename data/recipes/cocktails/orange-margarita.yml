@@ -1,29 +1,36 @@
-name: 'Orange Margarita'
+name: Orange Margarita
 servings: 1
-preptime: '1 minute'
-cooktime: '2 minutes'
+preptime: 1 minute
+cooktime: 2 minutes
 equipment:
-        - name: 'Kitchen Scale'
-          link: 'ref:kitchen-scales'
-        - name: 'Cocktail Shaker'
-          link: 'ref:cocktail-shakers'
-        - name: 'Martini Glass'
-          link: 'ref:cocktail-glasses'
+- name: Kitchen Scale
+  link: equipment:kitchen-scales
+- name: Cocktail Shaker
+  link: equipment:cocktail-shakers
+- name: Martini Glass
+  link: equipment:cocktail-glasses
 ingredients:
-        - name: 'Tequila'
-          quantity: 49 grams
-          link: 'ref:tequila'
-        - name: 'Cointreau'
-          quantity: 56 grams
-          link: 'ref:cointreau'
-        - name: 'Coarse kosher salt'
-          link: 'ref:kosher-salt'
-          quantity: 25 grams
+- name: Tequila
+  quantity: 49 grams
+  link: ingredient:tequila
+- name: Cointreau
+  quantity: 56 grams
+  link: ingredient:cointreau
+- name: Coarse kosher salt
+  link: ingredient:kosher-salt
+  quantity: 25 grams
 directions:
-        - step: 'Place cocktail shaker on kitchen scale'
-        - step: 'Turn on kitchen scale and wait for it to set to zero with measurement set to grams'
-        - step: 'Add crushed ice to cocktail shaker, then hit Tare'
-        - step: 'Add liquid ingredients to cocktail shaker, hitting Tare between each addition'
-        - step:  'Place lid on cocktail shaker, then hold firmly, and shake vigorously for about 10 seconds'
-        - step: 'Pour cocktail into martini glass'
-tags: [cocktail, tequila, cointreau, margarita, orange]
+- step: Place cocktail shaker on kitchen scale
+- step: Turn on kitchen scale and wait for it to set to zero with measurement set
+    to grams
+- step: Add crushed ice to cocktail shaker, then hit Tare
+- step: Add liquid ingredients to cocktail shaker, hitting Tare between each addition
+- step: Place lid on cocktail shaker, then hold firmly, and shake vigorously for about
+    10 seconds
+- step: Pour cocktail into martini glass
+tags:
+- cocktail
+- tequila
+- cointreau
+- margarita
+- orange

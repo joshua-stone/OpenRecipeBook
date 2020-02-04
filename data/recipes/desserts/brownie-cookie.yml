@@ -4,17 +4,17 @@ preptime: 75 minutes
 cooktime: 12 minutes
 equipment:
 - name: Whisk
-  link: ref:whisk
+  link: equipment:whisk
 - name: Baking Sheet
-  link: ref:baking-sheet
+  link: equipment:baking-sheet
 - name: Microwave
-  link: ref:microwave
+  link: equipment:microwave
 - name: Mixing Bowls
-  link: ref:mixing-bowls
+  link: equipment:mixing-bowls
 - name: Sifter
-  link: ref:sifter
+  link: equipment:sifter
 - name: Spatula
-  link: ref:spatula
+  link: equipment:spatula
 ingredients:
 - name: dark chocolate
   quantity: 150 grams

@@ -4,13 +4,13 @@ preptime: 1 minute
 cooktime: 3 minutes
 equipment:
   - name: Bar Spoon
-    link: ref:bar-spoons
+    link: equipment:bar-spoons
   - name: Martini Glass
-    link: ref:martini-glasses
+    link: equipment:martini-glasses
   - name: Mixing Glass
-    link: ref:mixing-glasses
+    link: equipment:mixing-glasses
   - name: Julep Strainer
-    link: ref:julep-strainers
+    link: equipment:julep-strainers
   - name: Kitchen Knife
   - name: Crushed Ice
 ingredients:
