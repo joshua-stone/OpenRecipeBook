@@ -4,11 +4,14 @@ prep-time: 1 minute
 cook-time: 1 minute
 equipment:
 - name: equipment name
-  link: ref:link_id
+  link: equipment:link_id
 ingredients:
 - name: ingredient name
-  unit: gram
-  quantity: 1
+  quantity: 1 gram
+  link: ingredient:link_id
 directions:
 - step: step
   note: optional note
+tags:
+- tag1
+- tag2
