@@ -74,8 +74,8 @@ class RecipeAsciidocPresenter(object):
 
             if 'link' in item:
                 link = item['link']
-                if link.startswith('ref:'):
-                    line = f'* <<{link[4:]}, {text}>>'
+                if link.startswith('equipment:') or link.startswith('ingredient:') or link.startswith('recipe:'):
+                    line = f"* <<{ref_encode(link)}, {text}>>"
                 elif link.startswith('http://') or link.startswith('https://'):
                     line = f'* {link}[{text}]'
                 else:
