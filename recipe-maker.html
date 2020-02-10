@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Recipe Maker</title>
+    </head>
+<style>
+#inputField form  { 
+    display: table;
+}
+#inputField p { 
+    display: table-row;
+}
+#inputField label { 
+    display: table-cell;
+}
+#inputField input {
+    display: table-cell;
+}
+#equipment th {
+    align: right;
+}
+</style>
+
+    <body>
+        <h1>Recipe Maker</h1>
+
+	<form id=inputField>
+            <p>
+	    <label for="name"><b>Name:</b></label><input id="name" name="name" type="text">
+            </p>
+            <p>
+	    <label for="servings"><b>Servings:</b></label><input id="servings" name="servings" type="text">
+            </p>
+            <p>
+	    <label for="preptime"><b>Prep Time:</b></label><input id="preptime" name="preptime" type="text">
+            </p>
+            <p>
+	    <label for="cooktime"><b>Cook Time:</b></label><input id="cooktime" name="cooktime" type="text">
+            </p>
+
+	    <table id="equipment">
+           <tr><th align="left">Equipment:</th></tr>
+           </table>
+	    <p>
+            <button type="button" onClick="addRow('equipment', equipment, equipmentRow)">+</button><button type="button" onClick="deleteRow('equipment', equipment, equipmentRow)">-</button>
+            </p>
+
+           <table id="ingredients">
+           <tr><th>Ingredients:</th></tr>
+           </table>
+            <p>
+            <button type="button" onClick="addRow('ingredients', ingredients, ingredientRow)">+</button><button type="button" onClick="deleteRow('ingredients', ingredients, ingredientRow)">-</button>
+            </p>
+
+	   <table id="directions">
+           <tr><th>Directions:</th></tr>
+           </table>
+            <p>
+            <button type="button" onClick="addStep()">+</button><button type="button" onClick="deleteStep()">-</button>
+            </p>
+
+            </p>
+            </p>
+	    <p>
+            <button type="button" onClick="genOutput()">Generate</button>
+	    </p>
+	</form>
+	<div id=table1>
+		</div>
+        <textarea rows="20" cols="100" id="output"></textarea>
+    </body>
+
+<script type="text/javascript">
+equipmentRow = {"name": "Name", "link": "Link"}
+ingredientRow = { "name": "Name", "quantity": "Quantity", "link": "Link"}
+directionRow = {"step": "Step", "note": "Note" }
+equipment = [];
+ingredients = [];
+directions = [];
+
+function getValue(value) {
+    return document.getElementById(value).value.trim();
+}
+
+function getEquipment(data) {
+    let output = [];
+    if (data['name'].value) {
+        output.push("- name: " + data['name'].value);
+        if (data['link'].value) {
+            output.push("link: " + data['link'].value);
+        }
+    }
+    return output.join("\n  ");
+}
+
+function getIngredient(data) {
+    let output = [];
+    if (data['name'].value) {
+        output.push("- name: " + data['name'].value);
+        if (data['link'].value) {
+            output.push("link: " + data['link'].value);
+        }
+	if (data['quantity'].value) {
+            output.push("quantity: " + data['quantity'].value);
+        }
+
+    }
+    return output.join("\n  ");
+}
+
+function getStep(data) {
+    let output = [];
+    if (data['step'].value) {
+        output.push("- step: " + data['step'].value);
+        if (data['note'].value) {
+            output.push("note: " + data['note'].value);
+        }
+    }
+    return output.join("\n  ");
+}
+function genTable(table, funct) {
+    return table.map(element => funct(element)).join("\n");
+}
+
+function genOutput() {
+    let name     = "name: "     + getValue("name") + "\n";
+    let servings = "servings: " + getValue("servings") + "\n";
+    let preptime = "preptime: " + getValue("preptime") + "\n";
+    let cooktime = "cooktime: " + getValue("cooktime") + "\n";
+    let equipmentOutput  = "equipment:\n"   + genTable(equipment, getEquipment) + "\n";
+    let ingredientOutput = "ingredients:\n" + genTable(ingredients, getIngredient) + "\n";
+    let directionOutput  = "directions:\n"  + genTable(directions, getStep) + "\n";
+    document.getElementById("output").value = name + 
+		                              servings +
+		                              preptime +
+		                              cooktime + 
+		                              equipmentOutput +
+		                              ingredientOutput +
+		                              directionOutput;
+}
+
+function addRow(tableID, table, tableSpec) {
+    let tableRef = document.getElementById(tableID);
+    let obj = {};
+    for (const [key, value] of Object.entries(tableSpec)) {
+        let newRow = tableRef.insertRow(-1);
+        let labelCell = newRow.insertCell(0);
+        let inputCell = newRow.insertCell(1);
+        let label = document.createTextNode(value + ": ");
+        let input = document.createElement('input');
+        input.setAttribute("type", "text");
+        labelCell.appendChild(label);
+        inputCell.appendChild(input);
+        obj[key] = input;
+  }
+  table.push(obj);
+}
+
+function deleteRow(tableID, table, tableSpec) {
+    if (table.length >= 1) {
+	console.log(table.length);
+        let tableRef = document.getElementById(tableID);
+        Object.entries(tableSpec).forEach(function(element) {
+            tableRef.deleteRow(-1);
+            table.pop();
+        });
+    }
+}
+
+function addStep() {
+    directionRow['step'] = "Step " + (directions.length + 1);
+    addRow('directions', directions, directionRow);
+
+}
+function deleteStep() {
+    deleteRow('directions', directions, directionRow);
+}
+
+addRow('equipment', equipment, equipmentRow);
+addRow('ingredients', ingredients, ingredientRow)
+//addStep()
+//addRow('directions', directions, directionRow)
+</script>
+</html>
