@@ -158,13 +158,14 @@ function addRow(tableID, table, tableSpec) {
 }
 
 function deleteRow(tableID, table, tableSpec) {
-    if (table.length >= 1) {
+    if (table.length > 1) {
 	console.log(table.length);
         let tableRef = document.getElementById(tableID);
-        Object.entries(tableSpec).forEach(function(element) {
+	
+	for (var i = 0; i < Object.keys(tableSpec).length; i++ ) {
             tableRef.deleteRow(-1);
-            table.pop();
-        });
+        }
+	table.pop();
     }
 }
 
@@ -179,7 +180,7 @@ function deleteStep() {
 
 addRow('equipment', equipment, equipmentRow);
 addRow('ingredients', ingredients, ingredientRow)
-//addStep()
+addStep()
 //addRow('directions', directions, directionRow)
 </script>
 </html>
