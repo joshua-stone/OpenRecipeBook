@@ -1,0 +1,30 @@
+name: Honey Mustard Dressing
+servings: 5 servings
+preptime: 3 minutes
+cooktime: 1 minute
+equipment:
+- name: Mason jar
+  link: equipment:mason-jars
+- name: Kitchen Scale
+  link: equipment:kitchen-scales
+ingredients:
+- name: olive oil
+  quantity: 50 grams
+- name: white wine vinegar
+  quantity: 55 grams
+- name: honey
+  quantity: 30 grams
+- name: dijon mustard
+  quantity: 35 grams
+- name: fine sea salt
+  quantity: 4 grams
+- name: fresh black pepper
+  quantity: 3 grams
+directions:
+- step: Place mason jar on kitchen scale, then turn on scale with unit set to grams
+- step: Add all ingredients in any order, hitting Tare between each addition
+- step: Seal mason jar with lid, then shake vigorously until all ingredients are incorporated
+- step: Serve immediately, or store inside jar for up to a few days
+tags:
+- salad dressing
+- dressing
