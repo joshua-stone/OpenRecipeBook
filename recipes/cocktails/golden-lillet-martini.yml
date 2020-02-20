@@ -1,0 +1,27 @@
+---
+name: Golden Lillet Martini
+servings: 1 serving
+preptime: 3 minutes
+cooktime: 3 minutes
+equipment:
+- name: Cocktail Shaker
+  link: equipment:cocktail-shakers
+- name: Martini Glass
+  link: equipment:martini-glasses
+- name: Jigger
+- name: Ice
+ingredients:
+- name: Rhum Barbancourt
+  quantity: 2 ounces
+- name: Lillet Blanc
+  quantity: 1.5 ounces
+- name: Limoncello Liquer
+  quantity: 0.5 ounces
+- name: Lemon Twist
+  quantity: 1
+directions:
+- step: Combine liquid ingredients in the cocktail shaker.
+- step: Add ice to the cocktail shaker. Shake vigorously for 10 - 12 seconds.
+- step: Strain into the chilled martini glass.
+- step: Garnish with a twist of lemon peel.
+tags: []
