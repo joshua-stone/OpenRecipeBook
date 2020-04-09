@@ -1,0 +1,11 @@
+name: 'Food Processors'
+products:
+        - name: 'Cuisinart DFP-14BCNY 14-Cup Food Processor'
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=QZokEtjvDao'
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/the-best-food-processor/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Cuisinart-DFP-14BCNY-Processor-Brushed-Stainless/dp/B01AXM4WV2'

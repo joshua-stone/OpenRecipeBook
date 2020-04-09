@@ -1,0 +1,56 @@
+name: Simple Baked Salmon Fillet
+servings: 1
+preptime: 15 minutes
+cooktime: 25 minutes
+equipment:
+- name: Mixing Bowl
+  link: equipment:mixing-bowls
+- name: Sauce Pan
+  link: equipment:sauce-pan
+- name: baking-pan
+  link: equipment:baking-pan
+- name: Kitchen Scale
+  link: equipment:kitchen-scales
+- name: Stove top or hot plate
+- name: Oven
+ingredients:
+- name: salmon fillet
+  quantity: 1
+- name: panko bread crubs
+  quantity: 200 grams
+- name: butter
+  quantity: 60 grams
+- name: thyme
+  quantity: 10
+- name: kosher salt
+  quantity: 10 grams
+- name: black pepper
+  quantity: 10
+- name: grain mustard
+  quantity: 15 grams
+- name: mayonnaise
+  quantity: 15grams
+- name: egg
+  quantity: 1
+- name: vegetable oil
+  quantity: 5 grams
+directions:
+- step: Melt the butter in low to medium heat in a sauce pan
+- step: Toast the bread crumbs until lightly golden color
+- step: Add and mix in finely chopped thyme, salt, and pepper and then set it aside
+    in a bowl
+- step: Mix in a small bowl the mayonnaise and grain mustard
+- step: Place a sheet of aluminum foil on top of the baking tray and spray it with
+    oil
+- step: Place the salmon fillet on top of the preparred baking tray
+  note: You may also split the salmon fillet in half
+- step: Add salt and pepper on top of the fish fillet
+- step: Spread the mayonnaise and mustard on top of the fillet
+- step: Seperate the egg yolk from the egg and then mix the egg white with the bread
+    crumbs
+- step: Spread the bread crumb mixture evenly on top of the fillet
+- step: Bake the fillet at [temp:165C] for 18 to 25 minutes
+tags:
+- salmon
+- fish
+- meat

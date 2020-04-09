@@ -7,9 +7,10 @@ One of the best things about open source is its collaborative nature and the sen
 === Ubuntu
 
 ....
-$ sudo apt install --assume-yes make pandoc python3-yaml python3-pip ruby
-$ sudo gem install asciidoctor-pdf --pre
-$ pip3 install --user cerberus
+$ sudo apt install --assume-yes make pandoc python3-pip ruby
+$ sudo gem install bundler
+$ pip3 install --user -r requirements.txt
+$ bundle install
 $ make
 $ xdg-open builds/recipe-book.pdf
 ....
@@ -18,9 +19,23 @@ $ xdg-open builds/recipe-book.pdf
 
 ....
 $ toolbox create --container openrecipebook --release f31
-$ toolbox run --container openrecipebook sudo dnf --assumeyes install make pandoc python3-cerberus python3-yaml rubygem-asciidoctor-pdf
+$ toolbox run --container openrecipebook sudo dnf --assumeyes install make pandoc python3-pip ruby
+$ toolbox run --container openrecipebook sudo gem install bundler
+$ toolbox run --container openrecipebook pip3 install --user -r requirements.txt
+$ toolbox run --container openrecipebook bundle install
 $ toolbox run --container openrecipebook make
 $ xdg-open builds/recipe-book.pdf
+....
+
+=== OpenSUSE
+
+....
+$ sudo zypper --non-interactive install make pandoc python3-pip ruby
+$ sudo gem install bundler
+$ pip3 install --user -r requirements.txt
+$ bundle install
+$ make
+$ xdg-open builds/recipes-book.pdf
 ....
 
 == Community
@@ -31,7 +46,7 @@ Please check out the official https://discord.gg/sDzCaeH[OpenRecipeBook Discord 
 
 Anyone is welcome to contribute a recipe that they've perfected over time and have wanted to share with others! Please note that some guidelines should be followed for a consistent reading experience:
 
-- Additions should be derived from `src/templates/`. Recipes are stored as YAML, which can be checked by running `src/bin/checkschema.py`.
+- Additions should be derived from `templates/`. Recipes are stored as YAML, which can be checked by running `bin/checkschema.py recipe <RECIPE>.yml`.
 - Equipment should be explicitely listed, and any equipment should link to the equipment section of the recipe book. This lets aspiring home chefs quickly understand what they'd need to start cooking
 - Equipment additions should be anything contributors have personally used and would recommend and/or are well-reviewed by reputable sources
 - Measurements should use mass whenever possible. Due to differences and inconsistencies in measuring systems, measuring by volume can lead to an otherwise good recipe having poor results.
@@ -40,8 +55,7 @@ Anyone is welcome to contribute a recipe that they've perfected over time and ha
 
 == TODO
 
-- Port more of the project to YAML
-- Set up CI
 - Adding wiki pages
 - Support converting between mass Imperial and Metric
 - Look into supporting images
+- Put out prebuilt books for each edition

@@ -1,8 +1,0 @@
-[[mason-jars]]
-=== Mason Jars
-|===
-| Product | Reviews | Where to buy
-| Ball Regular Mouth 32-Ounces Mason Jar
-|
-| https://www.amazon.com/Ball-Regular-32-Ounces-2-Units-Pack/dp/B01N6QBJG0[Amazon]
-|===

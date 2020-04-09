@@ -1,0 +1,6 @@
+name: 'Corn Flour'
+products:
+        - name: 'Maseca Instant Yellow Corn Masa Flour'
+          stores:
+                - name: 'Amazon'
+                  link: 'https://www.amazon.com/Maseca-Instant-Yellow-Instantanea-Amarillo/dp/B004TD5FJK'

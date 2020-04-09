@@ -1,6 +1,0 @@
-= Recipes
-
-<<<
-
-include::recipes-include.adoc[]
-

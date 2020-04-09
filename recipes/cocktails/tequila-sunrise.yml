@@ -1,0 +1,30 @@
+name: Tequila Sunrise
+servings: 1 serving
+preptime: 2 minutes
+cooktime: 2 minutes
+equipment:
+- name: Cocktail shaker
+  link: equipment:cocktail-shakers
+- name: Cocktail glass
+- name: Cocktail strainer
+ingredients:
+- name: Cazadores Tequila Reposada
+  quantity: 1.5 oz
+  link: ingredient:tequila
+- name: fresh grenadine
+  quantity: 0.5 oz
+  link: recipe:basics/grenadine
+- name: fresh navelina orange juice
+  quantity: 6 oz
+- name: crushed ice
+  quantity: 100 grams
+directions:
+- step: Pour grenadine into cocktail glass
+- step: Add fresh orange juice, tequila, and crushed ice into cocktail shaker
+- step: Firmly place lid on cocktail shaker, then shake vigorously for about 10 seconds
+- step: Strain mixture slowly into cocktail glass with glass tilted at an angle, being careful not to mix with grenadine
+tags:
+- tequila
+- orange juice
+- grenadine
+- cocktail

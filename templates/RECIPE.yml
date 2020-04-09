@@ -1,0 +1,17 @@
+name: recipe name
+servings: 1
+preptime: 1 minute
+cooktime: 1 minute
+equipment:
+- name: equipment name
+  link: equipment:link_id
+ingredients:
+- name: ingredient name
+  quantity: 1 gram
+  link: ingredient:link_id
+directions:
+- step: step
+  note: optional note
+tags:
+- tag1
+- tag2

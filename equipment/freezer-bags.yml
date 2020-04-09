@@ -1,0 +1,9 @@
+name: 'Freezer Bags'
+products:
+        - name: 'Ziplock Freezer Bags 1-gallon'
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=n1Oj8oMFqUY'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Ziploc-Freezer-Bags-Gallon-Count/dp/B00CQAHOCO'

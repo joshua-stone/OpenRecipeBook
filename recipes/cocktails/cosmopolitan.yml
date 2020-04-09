@@ -1,0 +1,29 @@
+---
+name: Cosmopolitan
+servings: 1 serving
+preptime: 3 minutes
+cooktime: 3 minutes
+equipment:
+- name: Cocktail Shaker
+  link: equipment:cocktail-shakers
+- name: Jigger
+- name: Martini Glass
+  link: equipment:martini-glasses
+- name: Ice
+ingredients:
+- name: Citron Vodka
+  quantity: 2 ounces
+- name: Cointreau
+  quantity: 0.75 ounces
+- name: Lime Juice
+  quantity: 1 ounce
+- name: Cranberry Juice
+  quantity: 1 ounce
+- name: Lemon Twist
+  quantity: 1
+directions:
+- step: Combine liquid ingredients in the cocktail shaker.
+- step: Add ice to the cocktail shaker. Shake vigorously for 10 - 12 seconds.
+- step: Strain into a chilled cocktail glass.
+- step: Garnish with a twist of lemon peel.
+tags: []

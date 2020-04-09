@@ -1,0 +1,44 @@
+name: Modified Sidecar
+servings: 1
+preptime: 2 minutes
+cooktime: 2 minutes
+equipment:
+- name: Kitchen Scale
+  link: equipment:kitchen-scales
+- name: Cocktail Shaker
+  link: equipment:cocktail-shakers
+- name: Martini Glass
+  link: equipment:cocktail-glasses
+ingredients:
+- name: "R\xE9my Martin VSOP Cognac"
+  quantity: 56 gram
+  link: ingredient:cognac
+- name: Cointreau
+  quantity: 52 gram
+  link: ingredient:cointreau
+- name: Fresh lemon juice
+  quantity: 40 grams
+- name: Simple Syrup
+  quantity: 20 grams
+  link: ingredient:simple-syrup
+- name: Crushed ice
+  quantity: 200 grams
+- name: Superfine sugar
+  link: recipe:superfine-sugar
+  quantity: 25 grams
+directions:
+- step: Invert martini glass and carefully line rim with lemon juice
+- step: While martini glass is still inverted, line rim with superfine sugar
+- step: Place cocktail shaker on kitchen scale
+- step: Turn on kitchen scale and wait for it to set to zero with measurement set
+    to grams
+- step: Add crushed ice, then hit Tare
+- step: Add liquid ingredients in no particular order, hitting Tare between each addition
+    added
+- step: Place lid on cocktail shaker, then shake vigorously for about 10 seconds
+- step: Pour cocktail into martini glass
+tags:
+- cocktail
+- sidecar
+- cognac
+- cointreau

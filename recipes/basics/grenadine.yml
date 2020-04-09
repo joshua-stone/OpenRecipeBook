@@ -1,0 +1,41 @@
+name: Grenadine
+servings: 2 cups
+preptime: 5 minutes
+cooktime: 30 minutes
+equipment:
+- name: Cooking pot (volume of at least 1.5 liters)
+- name: Measuring cup
+- name: Measuring spoons
+- name: Stirring spoon or rod (metal or ceramic is recommended, grenadine will stain
+    wood)
+- name: Stove or hot plate
+ingredients:
+- name: Unsweetened pomegranete juice
+  quantity: 1 cup
+- name: Granulated sugar
+  quantity: 1 cup
+- name: pomegranete molasses
+  quantity: 1 ounce
+  link: ingredient:pomegranate-molasses
+- name: Orange blossom water
+  quantity: 1 teaspoon
+  link: ingredient:orange-blossom-water
+directions:
+- step: Add pomegranate juice to cooking pot
+- step: Place cooking pot on stove top, heating on medium heat until vapour rises
+    from the surface
+- step: Slowly add sugar to heated pomegranate juice, stirring until all sugar is
+    dissolved
+- step: Add pomegranate molasses to sweetened pomegranate juice, stirring until dissolved
+- step: Allow pot to reach a low simmer, stirring occassionally
+- step: Stir in orange blossom water to simmering grenadine, immediately removing
+    from heat
+- step: Cover and allow to cool for 10 minutes
+- step: Transfer into a glass bottle or jar for storage
+notes:
+- Grenadine has an expected shelf-life of 2 weeks, and can be kept refrigerated for
+  up to 4 weeks.
+tags:
+- syrup
+- cocktail
+- mixer

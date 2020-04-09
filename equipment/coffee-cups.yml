@@ -1,0 +1,6 @@
+name: 'Coffee Cups'
+products:
+        - name: 'Bodum Bistro Coffee Mugs'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/Bodum-Bistro-Coffee-Double-Wall-Insulated/dp/B00E2RU5TS'

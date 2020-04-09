@@ -1,7 +1,0 @@
-id: 'tortilla-presses'
-name: 'Tortilla Presses'
-products:
-        - name: 'Victoria 8-Inch Cast Iron Tortilla Press'
-          stores:
-                  - name: 'Amazon'
-                    link: 'https://www.amazon.com/Victoria-TOR-003-FBA_TOR-003-Tortilla-Press/dp/B00HWEIKZO'

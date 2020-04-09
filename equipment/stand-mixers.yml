@@ -1,0 +1,9 @@
+name: 'Stand Mixers'
+products:
+        - name: 'KitchenAid Artisan Series 5-Quart Stand Mixer'
+          reviews:
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/best-stand-mixer/'
+          stores:
+                  - name: 'Amazon'
+                    link: 'https://www.amazon.com/KitchenAid-KSM150PSER-Artisan-Tilt-Head-Pouring/dp/B00005UP2P'

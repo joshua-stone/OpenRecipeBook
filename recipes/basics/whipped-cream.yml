@@ -1,0 +1,27 @@
+name: Whipped cream
+servings: 5 servings
+preptime: 1 minute
+cooktime: 5 minutes
+equipment:
+- name: Mixing bowl
+  link: equipment:mixing-bowls
+- name: Whisk
+  link: equipment:whisk
+- name: Kitchen scale
+  link: equipment:kitchen-scales
+ingredients:
+- name: heavy whipping cream
+  quantity: 100 grams
+- name: powdered sugar
+  quantity: 15 grams
+- name: pure vanilla extract
+  quantity: 5 grams
+directions:
+- step: Place mixing bowl on kitchen scale, then turn on scale with unit set to zero grams
+- step: Add all ingredients into mixing bowl, hitting Tare between each one
+- step: Place mixing bowl on a steady surface and hold firmly with one hand while holding whisk in the other hand
+- step: Whisk cream mixture vigorously for about five minutes or until it reachs stiff peaks
+  note: Be sure to not overwhip the cream -- it should have a smooth appearance and hold its shape firmly
+tags:
+- whipped cream
+- dessert topping

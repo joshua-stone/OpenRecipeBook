@@ -1,0 +1,13 @@
+language: python
+python: 3.6
+before_install:
+  - sudo apt update
+  - sudo apt install -y make pandoc
+install:
+  - pip install -r requirements.txt
+  - bundle install
+script:
+  - bin/checkschema.py equipment data/equipment/*.yml
+  - bin/checkschema.py ingredient data/ingredients/*.yml
+  - bin/checkschema.py recipe data/recipes/**/*.yml
+  - make all

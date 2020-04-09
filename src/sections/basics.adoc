@@ -1,6 +1,0 @@
-== Basics
-
-<<<
-
-include::basics/corn-tortilla.adoc[]
-

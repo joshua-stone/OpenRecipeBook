@@ -1,0 +1,11 @@
+name: 'Thermometers'
+products:
+        - name: 'Thermapen Mk4'
+          reviews:
+                  - name: "America's Test Kitchen"
+                    link: 'https://www.youtube.com/watch?v=VwoyEZYDq58'
+                  - name: 'The Wirecutter'
+                    link: 'https://thewirecutter.com/reviews/the-best-instant-read-thermometer/'
+          stores:
+                  - name: 'Thermoworks'
+                    link: 'https://www.thermoworks.com/Thermapen-Mk4'

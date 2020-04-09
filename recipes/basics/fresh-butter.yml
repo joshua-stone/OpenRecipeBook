@@ -1,0 +1,55 @@
+name: Fresh butter
+servings: 2 sticks
+preptime: 1 minute
+cooktime: 10 minute
+equipment:
+- name: Food processor
+  link: equipment:food-processors
+- name: Medium mixing bowl
+  link: equipment:mixing-bowls
+- name: Large mixing bowl
+  link: equipment:mixing-bowls
+- name: Fine-mesh strainer
+  link: equipment:fine-mesh-strainers
+- name: Kitchen scale
+  link: equipment:kitchen-scales
+- name: Wooden spoon
+  link: equipment:wooden-spoons
+- name: Pastry scraper
+  link: equipment:pastry-scrapers
+- name: Parchment paper
+  link: equipment:wax-paper
+- name: Cheesecloth
+  link: equipment:cheesecloth
+- name: Paper towels
+  link: equipment:paper-towels
+ingredients:
+- name: Heavy whipping cream
+  quantity: 480 grams
+- name: Cold water
+  quantity: 1 liter
+directions:
+- step: Place food processor work bowl on top of kitchen scale, then turn on scale with unit set to grams
+  note: A plate could be place on kitchen scale first to prevent work bowl from touching scale
+- step: Pour heavy whipping cream into work bowl
+- step: Put work bowl back onto food processor mounting base, and place lid on work bowl
+- step: Turn on food processor to mix heavy whipping cream for about 5 minutes or until buttermilk starts to separate
+  note: Visual and audio cues help determine when cream turns to whipped cream and eventually into butter and buttermilk
+- step: Turn off food processor and remove lid, then carefully remove chopping blade
+- step: Place fine-mesh strainer on medium mixing bowl and line with cheesecloth, then slowly pour butter and buttermilk into strainer
+- step: Fill large mixing bowl with cold water, then add butter into large mixing bowl
+- step: Use wooden spoon to press butter for removing leftover buttermilk
+- step: Fill bowl with cold water, and continue pressing butter
+- step: Carefully drain water from bowl, then fill up again with fresh water
+  note: Some butter will likely be lost during this process
+- step: Continue removing excess buttermilk until water is clear
+- step: Remove butter from bowl and pat butter dry with paper towels
+- step: Roll a sheet of wax paper and place butter on top
+- step: Shape butter into a rectangular shape using wooden spoon and pastry scraper
+- step: Wrap wax paper around butter and seal for storage
+notes:
+- This recipe can generally create about 200 grams of buttermilk per batch which can then be used in other recipes
+tags:
+- dairy
+- butter
+- buttermilk

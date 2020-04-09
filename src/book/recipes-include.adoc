@@ -1,6 +1,0 @@
-include::recipes/basics.adoc[]
-
-include::recipes/cocktails.adoc[]
-
-include::recipes/coffee.adoc[]
-
