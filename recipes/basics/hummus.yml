@@ -1,0 +1,38 @@
+---
+name: Hummus
+servings: 4
+preptime: 5 minutes
+cooktime: 1 minute
+equipment:
+- name: food processor
+  link: equipment:food-processors
+- name: bowl
+  link: equipment:mixing-bowls
+- name: plastic wrap
+  link: equipment:plastic-wraps
+ingredients:
+- name: chickpeas
+  quantity: 1 can
+- name: Water
+  quantity: 64 grams
+- name: olive oil
+  quantity: 64 grams
+- name: Tahini
+  quantity: 64 grams
+- name: Lemons
+  quantity: 1
+- name: Clove Garlic
+  quantity: 3
+- name: Kosher salt
+  quantity: 12 grams
+- name: Ground cumin
+  quantity: 10 grams
+directions:
+- step: Drain and dry one can of chickpeas.
+  note: Keep the liquid in a separate bowl for a different recipe
+- step: Place the chickpeas into a food processor bowl along with water, olive oil and tahini
+- step: Squeeze the lemons into the food processor bowl along with three pressed garlic, kosher salt and ground cumin.
+  note: You may add also add any flavoring such as black pepper, white pepper or old bay.
+- step: Blend the ingredients for about thirty seconds or until completely smooth.
+- step: Place it in a bowl, cover with plastic wrap. Put the bowl in a fridge one hour before serving.
+tags: []

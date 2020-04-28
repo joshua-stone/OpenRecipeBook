@@ -1,0 +1,46 @@
+---
+name: Vegan Waffle
+servings: 4
+preptime: 7 minutes
+cooktime: 9 minutes
+equipment:
+- name: Waffle Iron
+- name: Spatula
+  link: equipment:silicone-spatulas
+- name: Mixing bowl
+  link: equipment:mixing-bowls
+- name: Stand Mixer
+  link: equipment:stand-mixers
+ingredients:
+- name: Aquafaba
+  quantity: 1
+- name: Brown Sugar
+  quantity: 100 grams
+- name: Granular Sugar
+  quantity: 75 grams
+- name: Salt
+  quantity: 5 grams
+- name: Flour
+  quantity: 500 grams
+- name: Baking Soda
+  quantity: 3 grams
+- name: Baking Powder
+  quantity: 3 grams
+- name: Vanilla Extract
+  quantity: 4 grams
+- name: coconut oil
+  quantity: 144 grams
+- name: Almond Milk
+  quantity: '50 grams '
+- name: Instant Espresso Powder
+  quantity: 50 grams
+directions:
+- step: Combine coconut oil with almond milk, brown  sugar and white sugar in a bowl
+- step: In a different bowl, combine the flour, salt, baking powder, baking soda, instant espresso powder.
+  note: You can also add chocolate chips.
+- step: Place the aquafaba in the stand mixer with the whisk attachment and whisk until thick.
+- step: Combine than whisk together the coconut oil mixture with the aquafaba.
+- step: Combine and fold the dry with the wet ingredients. Be careful to not mix thoroughly.
+- step: Cook the batter according to waffle Iron instructions.
+  note: If you want to eat them later, cook them halfway done and then let it cool completely. After they cool down store them in the freezer.
+tags: []

@@ -1,0 +1,26 @@
+---
+name: Meringues
+servings: 15
+preptime: 5 minutes
+cooktime: 2 hours
+equipment:
+- name: mixing bowl
+  link: equipment:mixing-bowls
+- name: Stand mixer
+  link: equipment:stand-mixers
+- name: Oven
+  link: equipment:toaster-ovens
+- name: Baking pan
+ingredients:
+- name: Liquid from 1 can chickpeas (aquafaba)
+  quantity: 1
+- name: Sugar
+  quantity: '64 grams '
+directions:
+- step: Dump one can of liquid chickpeas into a mixing bowl.
+- step: Use a wire whisk to beat the liquid on high speed for ten to fifteen minutes.
+  note: Beat the mixture until fluffy and stiff peaked.
+- step: Slowly add a spoonful of sugar, allow the mixture be thick and glossy before adding the next spoonful of sugar.
+- step: Place the fluffy mixture into a piping bag and pipe into little meringue on a baking pan with a baking sheet. Bake in a oven at 93 degrees Celsius for one and half hour for chewy texture or two hours for a crispy texture.
+  note: The meringue can be used for many other recipes such as meringue pie.
+tags: []
