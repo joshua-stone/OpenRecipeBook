@@ -1,0 +1,6 @@
+name: 'Soy Bean'
+products:
+        - name: 'Raw soy beans'
+          stores:
+                - name: 'Amazon'
+                  link: 'https://www.amazon.com/Soymerica-Non-GMO-Soybeans-Identity-Preserved/dp/B0763GC8SB/ref=sr_1_5?dchild=1&keywords=soy+bean&qid=1629491478&sr=8-5'
