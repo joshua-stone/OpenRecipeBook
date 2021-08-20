@@ -1,0 +1,32 @@
+name: Tofu
+servings: 4
+preptime: 10 minutes
+cooktime: 30 minutes
+equipment:
+- name: tofu mold
+  link: equipment:tofu-mold
+- name: mason jar
+  link: equipment:mason-jars
+- name: mixing bowl
+  link: equipment:mixing-bowls
+- name: strainer
+  link: equipment:strainer
+ingredients:
+- name: Soy milk
+  quantity: 1200 grams
+- name: Nigari
+  quantity: 20 grams
+- name: Water
+  quantity: 237 grams
+directions:
+- step: Place 1200 grams of soy milk, 237 grams of water and 20 grams of nigari into mixing bowl.
+  note: Depending on water hardness or firmer tofu, you may want to add more nigari
+- step: Mix the soy milk mixture for three minutes until pale yellow curds begin to form.
+- step: Drain the whey.
+- step: Place the curds in a cheesecloth then place it in the mold.
+- step: Press down and place something heavy on top for fifteen minutes.
+  note: If you want extra firm tofu press down for an extra ten minutes
+- step: Chill the tofu for ten minutes until it is firm enough to cut into pieces.
+- step: Place the tofu in the mason jar ready to be used in many recipies.
+  note: You can eat the fresh tofu raw. 
+tags: []

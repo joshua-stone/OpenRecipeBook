@@ -1,0 +1,28 @@
+name: Soy Milk
+servings: 4
+preptime: 10 hours
+cooktime: 25 minutes
+equipment:
+- name: blenders
+  link: equipment:blenders
+- name: saute pan
+  link: equipment:saute-pans
+- name: strainer
+  link: equipment:strainer
+- name: mason jar
+  link: equipment:mason-jars
+ingredients:
+- name: Soy-beans
+  quantity: 237 grams
+- name: Water
+  quantity: 2000 grams
+directions:
+- step: Wash then soak the soy beans in 800 grams of water for 10 hours.
+- step: Discard the water used to soak the soy beans then place the soaked soy beans in the blender with 1200 grams of clean water.
+- step: blend the soy beans until smooth.
+- step: Strain the mixture onto large saute pan.
+  note: Save the filtered pulp (soy flour) for future recipes.
+- step: Heat the soy milk for 20 minutes in 100 degree celsius, stirring frequently to prevent sticking.
+- step: Cool then poor the milk into a mason jar.
+  note: Fresh soy milk can be refigerated up to four days.
+tags: []
